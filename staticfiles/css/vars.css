@@ -1,0 +1,5887 @@
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --material-theme-white: #ffffff;
+    --material-theme-black: #000000;
+    --material-theme-sys-light-primary: #904a47;
+    --material-theme-sys-light-surface-tint: #904a47;
+    --material-theme-sys-light-on-primary: #ffffff;
+    --material-theme-sys-light-primary-container: #ffdad7;
+    --material-theme-sys-light-on-primary-container: #3b080a;
+    --material-theme-sys-light-secondary: #775654;
+    --material-theme-sys-light-on-secondary: #ffffff;
+    --material-theme-sys-light-secondary-container: #ffdad7;
+    --material-theme-sys-light-on-secondary-container: #2c1514;
+    --material-theme-sys-light-tertiary: #735b2e;
+    --material-theme-sys-light-on-tertiary: #ffffff;
+    --material-theme-sys-light-tertiary-container: #ffdea8;
+    --material-theme-sys-light-on-tertiary-container: #271900;
+    --material-theme-sys-light-error: #ba1a1a;
+    --material-theme-sys-light-on-error: #ffffff;
+    --material-theme-sys-light-error-container: #ffdad6;
+    --material-theme-sys-light-on-error-container: #410002;
+    --material-theme-sys-light-background: #fff8f7;
+    --material-theme-sys-light-on-background: #231919;
+    --material-theme-sys-light-surface: #fff8f7;
+    --material-theme-sys-light-on-surface: #231919;
+    --material-theme-sys-light-surface-variant: #f4dddb;
+    --material-theme-sys-light-on-surface-variant: #534342;
+    --material-theme-sys-light-outline: #857371;
+    --material-theme-sys-light-outline-variant: #d8c2c0;
+    --material-theme-sys-light-shadow: #000000;
+    --material-theme-sys-light-scrim: #000000;
+    --material-theme-sys-light-inverse-surface: #382e2d;
+    --material-theme-sys-light-inverse-on-surface: #ffedeb;
+    --material-theme-sys-light-inverse-primary: #ffb3af;
+    --material-theme-sys-light-primary-fixed: #ffdad7;
+    --material-theme-sys-light-on-primary-fixed: #3b080a;
+    --material-theme-sys-light-primary-fixed-dim: #ffb3af;
+    --material-theme-sys-light-on-primary-fixed-variant: #733331;
+    --material-theme-sys-light-secondary-fixed: #ffdad7;
+    --material-theme-sys-light-on-secondary-fixed: #2c1514;
+    --material-theme-sys-light-secondary-fixed-dim: #e7bdba;
+    --material-theme-sys-light-on-secondary-fixed-variant: #5d3f3d;
+    --material-theme-sys-light-tertiary-fixed: #ffdea8;
+    --material-theme-sys-light-on-tertiary-fixed: #271900;
+    --material-theme-sys-light-tertiary-fixed-dim: #e2c28c;
+    --material-theme-sys-light-on-tertiary-fixed-variant: #594319;
+    --material-theme-sys-light-surface-dim: #e8d6d4;
+    --material-theme-sys-light-surface-bright: #fff8f7;
+    --material-theme-sys-light-surface-container-lowest: #ffffff;
+    --material-theme-sys-light-surface-container-low: #fff0ef;
+    --material-theme-sys-light-surface-container: #fceae8;
+    --material-theme-sys-light-surface-container-high: #f6e4e2;
+    --material-theme-sys-light-surface-container-highest: #f1dedd;
+    --material-theme-sys-dark-primary: #ffb3af;
+    --material-theme-sys-dark-surface-tint: #ffb3af;
+    --material-theme-sys-dark-on-primary: #571d1d;
+    --material-theme-sys-dark-primary-container: #733331;
+    --material-theme-sys-dark-on-primary-container: #ffdad7;
+    --material-theme-sys-dark-secondary: #e7bdba;
+    --material-theme-sys-dark-on-secondary: #442928;
+    --material-theme-sys-dark-secondary-container: #5d3f3d;
+    --material-theme-sys-dark-on-secondary-container: #ffdad7;
+    --material-theme-sys-dark-tertiary: #e2c28c;
+    --material-theme-sys-dark-on-tertiary: #402d05;
+    --material-theme-sys-dark-tertiary-container: #594319;
+    --material-theme-sys-dark-on-tertiary-container: #ffdea8;
+    --material-theme-sys-dark-error: #ffb4ab;
+    --material-theme-sys-dark-on-error: #690005;
+    --material-theme-sys-dark-error-container: #93000a;
+    --material-theme-sys-dark-on-error-container: #ffdad6;
+    --material-theme-sys-dark-background: #1a1111;
+    --material-theme-sys-dark-on-background: #f1dedd;
+    --material-theme-sys-dark-surface: #1a1111;
+    --material-theme-sys-dark-on-surface: #f1dedd;
+    --material-theme-sys-dark-surface-variant: #534342;
+    --material-theme-sys-dark-on-surface-variant: #d8c2c0;
+    --material-theme-sys-dark-outline: #a08c8b;
+    --material-theme-sys-dark-outline-variant: #534342;
+    --material-theme-sys-dark-shadow: #000000;
+    --material-theme-sys-dark-scrim: #000000;
+    --material-theme-sys-dark-inverse-surface: #f1dedd;
+    --material-theme-sys-dark-inverse-on-surface: #382e2d;
+    --material-theme-sys-dark-inverse-primary: #904a47;
+    --material-theme-sys-dark-primary-fixed: #ffdad7;
+    --material-theme-sys-dark-on-primary-fixed: #3b080a;
+    --material-theme-sys-dark-primary-fixed-dim: #ffb3af;
+    --material-theme-sys-dark-on-primary-fixed-variant: #733331;
+    --material-theme-sys-dark-secondary-fixed: #ffdad7;
+    --material-theme-sys-dark-on-secondary-fixed: #2c1514;
+    --material-theme-sys-dark-secondary-fixed-dim: #e7bdba;
+    --material-theme-sys-dark-on-secondary-fixed-variant: #5d3f3d;
+    --material-theme-sys-dark-tertiary-fixed: #ffdea8;
+    --material-theme-sys-dark-on-tertiary-fixed: #271900;
+    --material-theme-sys-dark-tertiary-fixed-dim: #e2c28c;
+    --material-theme-sys-dark-on-tertiary-fixed-variant: #594319;
+    --material-theme-sys-dark-surface-dim: #1a1111;
+    --material-theme-sys-dark-surface-bright: #423736;
+    --material-theme-sys-dark-surface-container-lowest: #140c0c;
+    --material-theme-sys-dark-surface-container-low: #231919;
+    --material-theme-sys-dark-surface-container: #271d1d;
+    --material-theme-sys-dark-surface-container-high: #322827;
+    --material-theme-sys-dark-surface-container-highest: #3d3231;
+    --material-theme-sys-light-high-contrast-primary: #440f10;
+    --material-theme-sys-light-high-contrast-surface-tint: #904a47;
+    --material-theme-sys-light-high-contrast-on-primary: #ffffff;
+    --material-theme-sys-light-high-contrast-primary-container: #6e2f2d;
+    --material-theme-sys-light-high-contrast-on-primary-container: #ffffff;
+    --material-theme-sys-light-high-contrast-secondary: #341b1a;
+    --material-theme-sys-light-high-contrast-on-secondary: #ffffff;
+    --material-theme-sys-light-high-contrast-secondary-container: #593b39;
+    --material-theme-sys-light-high-contrast-on-secondary-container: #ffffff;
+    --material-theme-sys-light-high-contrast-tertiary: #2f1f00;
+    --material-theme-sys-light-high-contrast-on-tertiary: #ffffff;
+    --material-theme-sys-light-high-contrast-tertiary-container: #553f15;
+    --material-theme-sys-light-high-contrast-on-tertiary-container: #ffffff;
+    --material-theme-sys-light-high-contrast-error: #4e0002;
+    --material-theme-sys-light-high-contrast-on-error: #ffffff;
+    --material-theme-sys-light-high-contrast-error-container: #8c0009;
+    --material-theme-sys-light-high-contrast-on-error-container: #ffffff;
+    --material-theme-sys-light-high-contrast-background: #fff8f7;
+    --material-theme-sys-light-high-contrast-on-background: #231919;
+    --material-theme-sys-light-high-contrast-surface: #fff8f7;
+    --material-theme-sys-light-high-contrast-on-surface: #000000;
+    --material-theme-sys-light-high-contrast-surface-variant: #f4dddb;
+    --material-theme-sys-light-high-contrast-on-surface-variant: #2e2120;
+    --material-theme-sys-light-high-contrast-outline: #4e3f3e;
+    --material-theme-sys-light-high-contrast-outline-variant: #4e3f3e;
+    --material-theme-sys-light-high-contrast-shadow: #000000;
+    --material-theme-sys-light-high-contrast-scrim: #000000;
+    --material-theme-sys-light-high-contrast-inverse-surface: #382e2d;
+    --material-theme-sys-light-high-contrast-inverse-on-surface: #ffffff;
+    --material-theme-sys-light-high-contrast-inverse-primary: #ffe7e5;
+    --material-theme-sys-light-high-contrast-primary-fixed: #6e2f2d;
+    --material-theme-sys-light-high-contrast-on-primary-fixed: #ffffff;
+    --material-theme-sys-light-high-contrast-primary-fixed-dim: #521a19;
+    --material-theme-sys-light-high-contrast-on-primary-fixed-variant: #ffffff;
+    --material-theme-sys-light-high-contrast-secondary-fixed: #593b39;
+    --material-theme-sys-light-high-contrast-on-secondary-fixed: #ffffff;
+    --material-theme-sys-light-high-contrast-secondary-fixed-dim: #402624;
+    --material-theme-sys-light-high-contrast-on-secondary-fixed-variant: #ffffff;
+    --material-theme-sys-light-high-contrast-tertiary-fixed: #553f15;
+    --material-theme-sys-light-high-contrast-on-tertiary-fixed: #ffffff;
+    --material-theme-sys-light-high-contrast-tertiary-fixed-dim: #3c2902;
+    --material-theme-sys-light-high-contrast-on-tertiary-fixed-variant: #ffffff;
+    --material-theme-sys-light-high-contrast-surface-dim: #e8d6d4;
+    --material-theme-sys-light-high-contrast-surface-bright: #fff8f7;
+    --material-theme-sys-light-high-contrast-surface-container-lowest: #ffffff;
+    --material-theme-sys-light-high-contrast-surface-container-low: #fff0ef;
+    --material-theme-sys-light-high-contrast-surface-container: #fceae8;
+    --material-theme-sys-light-high-contrast-surface-container-high: #f6e4e2;
+    --material-theme-sys-light-high-contrast-surface-container-highest: #f1dedd;
+    --material-theme-sys-dark-high-contrast-primary: #fff9f9;
+    --material-theme-sys-dark-high-contrast-surface-tint: #ffb3af;
+    --material-theme-sys-dark-high-contrast-on-primary: #000000;
+    --material-theme-sys-dark-high-contrast-primary-container: #ffb9b5;
+    --material-theme-sys-dark-high-contrast-on-primary-container: #000000;
+    --material-theme-sys-dark-high-contrast-secondary: #fff9f9;
+    --material-theme-sys-dark-high-contrast-on-secondary: #000000;
+    --material-theme-sys-dark-high-contrast-secondary-container: #ebc1be;
+    --material-theme-sys-dark-high-contrast-on-secondary-container: #000000;
+    --material-theme-sys-dark-high-contrast-tertiary: #fffaf7;
+    --material-theme-sys-dark-high-contrast-on-tertiary: #000000;
+    --material-theme-sys-dark-high-contrast-tertiary-container: #e7c690;
+    --material-theme-sys-dark-high-contrast-on-tertiary-container: #000000;
+    --material-theme-sys-dark-high-contrast-error: #fff9f9;
+    --material-theme-sys-dark-high-contrast-on-error: #000000;
+    --material-theme-sys-dark-high-contrast-error-container: #ffbab1;
+    --material-theme-sys-dark-high-contrast-on-error-container: #000000;
+    --material-theme-sys-dark-high-contrast-background: #1a1111;
+    --material-theme-sys-dark-high-contrast-on-background: #f1dedd;
+    --material-theme-sys-dark-high-contrast-surface: #1a1111;
+    --material-theme-sys-dark-high-contrast-on-surface: #ffffff;
+    --material-theme-sys-dark-high-contrast-surface-variant: #534342;
+    --material-theme-sys-dark-high-contrast-on-surface-variant: #fff9f9;
+    --material-theme-sys-dark-high-contrast-outline: #dcc6c4;
+    --material-theme-sys-dark-high-contrast-outline-variant: #dcc6c4;
+    --material-theme-sys-dark-high-contrast-shadow: #000000;
+    --material-theme-sys-dark-high-contrast-scrim: #000000;
+    --material-theme-sys-dark-high-contrast-inverse-surface: #f1dedd;
+    --material-theme-sys-dark-high-contrast-inverse-on-surface: #000000;
+    --material-theme-sys-dark-high-contrast-inverse-primary: #4e1717;
+    --material-theme-sys-dark-high-contrast-primary-fixed: #ffe0dd;
+    --material-theme-sys-dark-high-contrast-on-primary-fixed: #000000;
+    --material-theme-sys-dark-high-contrast-primary-fixed-dim: #ffb9b5;
+    --material-theme-sys-dark-high-contrast-on-primary-fixed-variant: #330406;
+    --material-theme-sys-dark-high-contrast-secondary-fixed: #ffe0dd;
+    --material-theme-sys-dark-high-contrast-on-secondary-fixed: #000000;
+    --material-theme-sys-dark-high-contrast-secondary-fixed-dim: #ebc1be;
+    --material-theme-sys-dark-high-contrast-on-secondary-fixed-variant: #26100f;
+    --material-theme-sys-dark-high-contrast-tertiary-fixed: #ffe3b7;
+    --material-theme-sys-dark-high-contrast-on-tertiary-fixed: #000000;
+    --material-theme-sys-dark-high-contrast-tertiary-fixed-dim: #e7c690;
+    --material-theme-sys-dark-high-contrast-on-tertiary-fixed-variant: #201400;
+    --material-theme-sys-dark-high-contrast-surface-dim: #1a1111;
+    --material-theme-sys-dark-high-contrast-surface-bright: #423736;
+    --material-theme-sys-dark-high-contrast-surface-container-lowest: #140c0c;
+    --material-theme-sys-dark-high-contrast-surface-container-low: #231919;
+    --material-theme-sys-dark-high-contrast-surface-container: #271d1d;
+    --material-theme-sys-dark-high-contrast-surface-container-high: #322827;
+    --material-theme-sys-dark-high-contrast-surface-container-highest: #3d3231;
+    --material-theme-sys-light-medium-contrast-primary: #6e2f2d;
+    --material-theme-sys-light-medium-contrast-surface-tint: #904a47;
+    --material-theme-sys-light-medium-contrast-on-primary: #ffffff;
+    --material-theme-sys-light-medium-contrast-primary-container: #aa5f5c;
+    --material-theme-sys-light-medium-contrast-on-primary-container: #ffffff;
+    --material-theme-sys-light-medium-contrast-secondary: #593b39;
+    --material-theme-sys-light-medium-contrast-on-secondary: #ffffff;
+    --material-theme-sys-light-medium-contrast-secondary-container: #8f6c6a;
+    --material-theme-sys-light-medium-contrast-on-secondary-container: #ffffff;
+    --material-theme-sys-light-medium-contrast-tertiary: #553f15;
+    --material-theme-sys-light-medium-contrast-on-tertiary: #ffffff;
+    --material-theme-sys-light-medium-contrast-tertiary-container: #8b7142;
+    --material-theme-sys-light-medium-contrast-on-tertiary-container: #ffffff;
+    --material-theme-sys-light-medium-contrast-error: #8c0009;
+    --material-theme-sys-light-medium-contrast-on-error: #ffffff;
+    --material-theme-sys-light-medium-contrast-error-container: #da342e;
+    --material-theme-sys-light-medium-contrast-on-error-container: #ffffff;
+    --material-theme-sys-light-medium-contrast-background: #fff8f7;
+    --material-theme-sys-light-medium-contrast-on-background: #231919;
+    --material-theme-sys-light-medium-contrast-surface: #fff8f7;
+    --material-theme-sys-light-medium-contrast-on-surface: #231919;
+    --material-theme-sys-light-medium-contrast-surface-variant: #f4dddb;
+    --material-theme-sys-light-medium-contrast-on-surface-variant: #4e3f3e;
+    --material-theme-sys-light-medium-contrast-outline: #6c5b5a;
+    --material-theme-sys-light-medium-contrast-outline-variant: #897675;
+    --material-theme-sys-light-medium-contrast-shadow: #000000;
+    --material-theme-sys-light-medium-contrast-scrim: #000000;
+    --material-theme-sys-light-medium-contrast-inverse-surface: #382e2d;
+    --material-theme-sys-light-medium-contrast-inverse-on-surface: #ffedeb;
+    --material-theme-sys-light-medium-contrast-inverse-primary: #ffb3af;
+    --material-theme-sys-light-medium-contrast-primary-fixed: #aa5f5c;
+    --material-theme-sys-light-medium-contrast-on-primary-fixed: #ffffff;
+    --material-theme-sys-light-medium-contrast-primary-fixed-dim: #8d4845;
+    --material-theme-sys-light-medium-contrast-on-primary-fixed-variant: #ffffff;
+    --material-theme-sys-light-medium-contrast-secondary-fixed: #8f6c6a;
+    --material-theme-sys-light-medium-contrast-on-secondary-fixed: #ffffff;
+    --material-theme-sys-light-medium-contrast-secondary-fixed-dim: #745452;
+    --material-theme-sys-light-medium-contrast-on-secondary-fixed-variant: #ffffff;
+    --material-theme-sys-light-medium-contrast-tertiary-fixed: #8b7142;
+    --material-theme-sys-light-medium-contrast-on-tertiary-fixed: #ffffff;
+    --material-theme-sys-light-medium-contrast-tertiary-fixed-dim: #70582c;
+    --material-theme-sys-light-medium-contrast-on-tertiary-fixed-variant: #ffffff;
+    --material-theme-sys-light-medium-contrast-surface-dim: #e8d6d4;
+    --material-theme-sys-light-medium-contrast-surface-bright: #fff8f7;
+    --material-theme-sys-light-medium-contrast-surface-container-lowest: #ffffff;
+    --material-theme-sys-light-medium-contrast-surface-container-low: #fff0ef;
+    --material-theme-sys-light-medium-contrast-surface-container: #fceae8;
+    --material-theme-sys-light-medium-contrast-surface-container-high: #f6e4e2;
+    --material-theme-sys-light-medium-contrast-surface-container-highest: #f1dedd;
+    --material-theme-sys-dark-medium-contrast-primary: #ffb9b5;
+    --material-theme-sys-dark-medium-contrast-surface-tint: #ffb3af;
+    --material-theme-sys-dark-medium-contrast-on-primary: #330406;
+    --material-theme-sys-dark-medium-contrast-primary-container: #cb7b76;
+    --material-theme-sys-dark-medium-contrast-on-primary-container: #000000;
+    --material-theme-sys-dark-medium-contrast-secondary: #ebc1be;
+    --material-theme-sys-dark-medium-contrast-on-secondary: #26100f;
+    --material-theme-sys-dark-medium-contrast-secondary-container: #ad8885;
+    --material-theme-sys-dark-medium-contrast-on-secondary-container: #000000;
+    --material-theme-sys-dark-medium-contrast-tertiary: #e7c690;
+    --material-theme-sys-dark-medium-contrast-on-tertiary: #201400;
+    --material-theme-sys-dark-medium-contrast-tertiary-container: #a98d5b;
+    --material-theme-sys-dark-medium-contrast-on-tertiary-container: #000000;
+    --material-theme-sys-dark-medium-contrast-error: #ffbab1;
+    --material-theme-sys-dark-medium-contrast-on-error: #370001;
+    --material-theme-sys-dark-medium-contrast-error-container: #ff5449;
+    --material-theme-sys-dark-medium-contrast-on-error-container: #000000;
+    --material-theme-sys-dark-medium-contrast-background: #1a1111;
+    --material-theme-sys-dark-medium-contrast-on-background: #f1dedd;
+    --material-theme-sys-dark-medium-contrast-surface: #1a1111;
+    --material-theme-sys-dark-medium-contrast-on-surface: #fff9f9;
+    --material-theme-sys-dark-medium-contrast-surface-variant: #534342;
+    --material-theme-sys-dark-medium-contrast-on-surface-variant: #dcc6c4;
+    --material-theme-sys-dark-medium-contrast-outline: #b39e9d;
+    --material-theme-sys-dark-medium-contrast-outline-variant: #927f7d;
+    --material-theme-sys-dark-medium-contrast-shadow: #000000;
+    --material-theme-sys-dark-medium-contrast-scrim: #000000;
+    --material-theme-sys-dark-medium-contrast-inverse-surface: #f1dedd;
+    --material-theme-sys-dark-medium-contrast-inverse-on-surface: #322827;
+    --material-theme-sys-dark-medium-contrast-inverse-primary: #743432;
+    --material-theme-sys-dark-medium-contrast-primary-fixed: #ffdad7;
+    --material-theme-sys-dark-medium-contrast-on-primary-fixed: #2c0103;
+    --material-theme-sys-dark-medium-contrast-primary-fixed-dim: #ffb3af;
+    --material-theme-sys-dark-medium-contrast-on-primary-fixed-variant: #5e2322;
+    --material-theme-sys-dark-medium-contrast-secondary-fixed: #ffdad7;
+    --material-theme-sys-dark-medium-contrast-on-secondary-fixed: #200b0a;
+    --material-theme-sys-dark-medium-contrast-secondary-fixed-dim: #e7bdba;
+    --material-theme-sys-dark-medium-contrast-on-secondary-fixed-variant: #4b2f2d;
+    --material-theme-sys-dark-medium-contrast-tertiary-fixed: #ffdea8;
+    --material-theme-sys-dark-medium-contrast-on-tertiary-fixed: #1a0f00;
+    --material-theme-sys-dark-medium-contrast-tertiary-fixed-dim: #e2c28c;
+    --material-theme-sys-dark-medium-contrast-on-tertiary-fixed-variant: #473309;
+    --material-theme-sys-dark-medium-contrast-surface-dim: #1a1111;
+    --material-theme-sys-dark-medium-contrast-surface-bright: #423736;
+    --material-theme-sys-dark-medium-contrast-surface-container-lowest: #140c0c;
+    --material-theme-sys-dark-medium-contrast-surface-container-low: #231919;
+    --material-theme-sys-dark-medium-contrast-surface-container: #271d1d;
+    --material-theme-sys-dark-medium-contrast-surface-container-high: #322827;
+    --material-theme-sys-dark-medium-contrast-surface-container-highest: #3d3231;
+    --material-theme-surfaces-light-surface1: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.05),
+        rgba(144, 74, 71, 0.05)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-surface2: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.08),
+        rgba(144, 74, 71, 0.08)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-surface3: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.11),
+        rgba(144, 74, 71, 0.11)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-surface4: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.12),
+        rgba(144, 74, 71, 0.12)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-surface5: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.14),
+        rgba(144, 74, 71, 0.14)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-dark-surface1: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.05),
+        rgba(255, 179, 175, 0.05)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-surface2: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.08),
+        rgba(255, 179, 175, 0.08)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-surface3: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.11),
+        rgba(255, 179, 175, 0.11)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-surface4: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.12),
+        rgba(255, 179, 175, 0.12)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-surface5: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.14),
+        rgba(255, 179, 175, 0.14)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-light-high-contrast-surface1: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.05),
+        rgba(144, 74, 71, 0.05)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-high-contrast-surface2: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.08),
+        rgba(144, 74, 71, 0.08)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-high-contrast-surface3: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.11),
+        rgba(144, 74, 71, 0.11)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-high-contrast-surface4: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.12),
+        rgba(144, 74, 71, 0.12)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-high-contrast-surface5: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.14),
+        rgba(144, 74, 71, 0.14)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-dark-high-contrast-surface1: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.05),
+        rgba(255, 179, 175, 0.05)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-high-contrast-surface2: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.08),
+        rgba(255, 179, 175, 0.08)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-high-contrast-surface3: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.11),
+        rgba(255, 179, 175, 0.11)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-high-contrast-surface4: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.12),
+        rgba(255, 179, 175, 0.12)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-high-contrast-surface5: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.14),
+        rgba(255, 179, 175, 0.14)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-light-medium-contrast-surface1: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.05),
+        rgba(144, 74, 71, 0.05)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-medium-contrast-surface2: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.08),
+        rgba(144, 74, 71, 0.08)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-medium-contrast-surface3: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.11),
+        rgba(144, 74, 71, 0.11)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-medium-contrast-surface4: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.12),
+        rgba(144, 74, 71, 0.12)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-light-medium-contrast-surface5: linear-gradient(
+        to left,
+        rgba(144, 74, 71, 0.14),
+        rgba(144, 74, 71, 0.14)
+      ),
+      linear-gradient(to left, #fff8f7, #fff8f7);
+    --material-theme-surfaces-dark-medium-contrast-surface1: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.05),
+        rgba(255, 179, 175, 0.05)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-medium-contrast-surface2: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.08),
+        rgba(255, 179, 175, 0.08)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-medium-contrast-surface3: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.11),
+        rgba(255, 179, 175, 0.11)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-medium-contrast-surface4: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.12),
+        rgba(255, 179, 175, 0.12)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-surfaces-dark-medium-contrast-surface5: linear-gradient(
+        to left,
+        rgba(255, 179, 175, 0.14),
+        rgba(255, 179, 175, 0.14)
+      ),
+      linear-gradient(to left, #1a1111, #1a1111);
+    --material-theme-state-layers-light-primary-opacity-008: rgba(
+      144,
+      74,
+      71,
+      0.08
+    );
+    --material-theme-state-layers-light-primary-opacity-012: rgba(
+      144,
+      74,
+      71,
+      0.12
+    );
+    --material-theme-state-layers-light-primary-opacity-016: rgba(
+      144,
+      74,
+      71,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacetint-opacity-008: rgba(
+      144,
+      74,
+      71,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacetint-opacity-012: rgba(
+      144,
+      74,
+      71,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacetint-opacity-016: rgba(
+      144,
+      74,
+      71,
+      0.16
+    );
+    --material-theme-state-layers-light-onprimary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-onprimary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-onprimary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-primarycontainer-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-light-primarycontainer-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-light-primarycontainer-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-light-onprimarycontainer-opacity-008: rgba(
+      59,
+      8,
+      10,
+      0.08
+    );
+    --material-theme-state-layers-light-onprimarycontainer-opacity-012: rgba(
+      59,
+      8,
+      10,
+      0.12
+    );
+    --material-theme-state-layers-light-onprimarycontainer-opacity-016: rgba(
+      59,
+      8,
+      10,
+      0.16
+    );
+    --material-theme-state-layers-light-secondary-opacity-008: rgba(
+      119,
+      86,
+      84,
+      0.08
+    );
+    --material-theme-state-layers-light-secondary-opacity-012: rgba(
+      119,
+      86,
+      84,
+      0.12
+    );
+    --material-theme-state-layers-light-secondary-opacity-016: rgba(
+      119,
+      86,
+      84,
+      0.16
+    );
+    --material-theme-state-layers-light-onsecondary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-onsecondary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-onsecondary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-secondarycontainer-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-light-secondarycontainer-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-light-secondarycontainer-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-light-onsecondarycontainer-opacity-008: rgba(
+      44,
+      21,
+      20,
+      0.08
+    );
+    --material-theme-state-layers-light-onsecondarycontainer-opacity-012: rgba(
+      44,
+      21,
+      20,
+      0.12
+    );
+    --material-theme-state-layers-light-onsecondarycontainer-opacity-016: rgba(
+      44,
+      21,
+      20,
+      0.16
+    );
+    --material-theme-state-layers-light-tertiary-opacity-008: rgba(
+      115,
+      91,
+      46,
+      0.08
+    );
+    --material-theme-state-layers-light-tertiary-opacity-012: rgba(
+      115,
+      91,
+      46,
+      0.12
+    );
+    --material-theme-state-layers-light-tertiary-opacity-016: rgba(
+      115,
+      91,
+      46,
+      0.16
+    );
+    --material-theme-state-layers-light-ontertiary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-ontertiary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-ontertiary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-tertiarycontainer-opacity-008: rgba(
+      255,
+      222,
+      168,
+      0.08
+    );
+    --material-theme-state-layers-light-tertiarycontainer-opacity-012: rgba(
+      255,
+      222,
+      168,
+      0.12
+    );
+    --material-theme-state-layers-light-tertiarycontainer-opacity-016: rgba(
+      255,
+      222,
+      168,
+      0.16
+    );
+    --material-theme-state-layers-light-ontertiarycontainer-opacity-008: rgba(
+      39,
+      25,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-ontertiarycontainer-opacity-012: rgba(
+      39,
+      25,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-ontertiarycontainer-opacity-016: rgba(
+      39,
+      25,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-error-opacity-008: rgba(
+      186,
+      26,
+      26,
+      0.08
+    );
+    --material-theme-state-layers-light-error-opacity-012: rgba(
+      186,
+      26,
+      26,
+      0.12
+    );
+    --material-theme-state-layers-light-error-opacity-016: rgba(
+      186,
+      26,
+      26,
+      0.16
+    );
+    --material-theme-state-layers-light-onerror-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-onerror-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-onerror-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-errorcontainer-opacity-008: rgba(
+      255,
+      218,
+      214,
+      0.08
+    );
+    --material-theme-state-layers-light-errorcontainer-opacity-012: rgba(
+      255,
+      218,
+      214,
+      0.12
+    );
+    --material-theme-state-layers-light-errorcontainer-opacity-016: rgba(
+      255,
+      218,
+      214,
+      0.16
+    );
+    --material-theme-state-layers-light-onerrorcontainer-opacity-008: rgba(
+      65,
+      0,
+      2,
+      0.08
+    );
+    --material-theme-state-layers-light-onerrorcontainer-opacity-012: rgba(
+      65,
+      0,
+      2,
+      0.12
+    );
+    --material-theme-state-layers-light-onerrorcontainer-opacity-016: rgba(
+      65,
+      0,
+      2,
+      0.16
+    );
+    --material-theme-state-layers-light-background-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-background-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-background-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-onbackground-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-onbackground-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-onbackground-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-surface-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-surface-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-surface-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-onsurface-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-onsurface-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-onsurface-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacevariant-opacity-008: rgba(
+      244,
+      221,
+      219,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacevariant-opacity-012: rgba(
+      244,
+      221,
+      219,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacevariant-opacity-016: rgba(
+      244,
+      221,
+      219,
+      0.16
+    );
+    --material-theme-state-layers-light-onsurfacevariant-opacity-008: rgba(
+      83,
+      67,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-light-onsurfacevariant-opacity-012: rgba(
+      83,
+      67,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-light-onsurfacevariant-opacity-016: rgba(
+      83,
+      67,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-light-outline-opacity-008: rgba(
+      133,
+      115,
+      113,
+      0.08
+    );
+    --material-theme-state-layers-light-outline-opacity-012: rgba(
+      133,
+      115,
+      113,
+      0.12
+    );
+    --material-theme-state-layers-light-outline-opacity-016: rgba(
+      133,
+      115,
+      113,
+      0.16
+    );
+    --material-theme-state-layers-light-outlinevariant-opacity-008: rgba(
+      216,
+      194,
+      192,
+      0.08
+    );
+    --material-theme-state-layers-light-outlinevariant-opacity-012: rgba(
+      216,
+      194,
+      192,
+      0.12
+    );
+    --material-theme-state-layers-light-outlinevariant-opacity-016: rgba(
+      216,
+      194,
+      192,
+      0.16
+    );
+    --material-theme-state-layers-light-shadow-opacity-008: rgba(0, 0, 0, 0.08);
+    --material-theme-state-layers-light-shadow-opacity-012: rgba(0, 0, 0, 0.12);
+    --material-theme-state-layers-light-shadow-opacity-016: rgba(0, 0, 0, 0.16);
+    --material-theme-state-layers-light-scrim-opacity-008: rgba(0, 0, 0, 0.08);
+    --material-theme-state-layers-light-scrim-opacity-012: rgba(0, 0, 0, 0.12);
+    --material-theme-state-layers-light-scrim-opacity-016: rgba(0, 0, 0, 0.16);
+    --material-theme-state-layers-light-inversesurface-opacity-008: rgba(
+      56,
+      46,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-inversesurface-opacity-012: rgba(
+      56,
+      46,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-inversesurface-opacity-016: rgba(
+      56,
+      46,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-inverseonsurface-opacity-008: rgba(
+      255,
+      237,
+      235,
+      0.08
+    );
+    --material-theme-state-layers-light-inverseonsurface-opacity-012: rgba(
+      255,
+      237,
+      235,
+      0.12
+    );
+    --material-theme-state-layers-light-inverseonsurface-opacity-016: rgba(
+      255,
+      237,
+      235,
+      0.16
+    );
+    --material-theme-state-layers-light-inverseprimary-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-light-inverseprimary-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-light-inverseprimary-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-light-primaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-light-primaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-light-primaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-light-onprimaryfixed-opacity-008: rgba(
+      59,
+      8,
+      10,
+      0.08
+    );
+    --material-theme-state-layers-light-onprimaryfixed-opacity-012: rgba(
+      59,
+      8,
+      10,
+      0.12
+    );
+    --material-theme-state-layers-light-onprimaryfixed-opacity-016: rgba(
+      59,
+      8,
+      10,
+      0.16
+    );
+    --material-theme-state-layers-light-primaryfixeddim-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-light-primaryfixeddim-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-light-primaryfixeddim-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-light-onprimaryfixedvariant-opacity-008: rgba(
+      115,
+      51,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-light-onprimaryfixedvariant-opacity-012: rgba(
+      115,
+      51,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-light-onprimaryfixedvariant-opacity-016: rgba(
+      115,
+      51,
+      49,
+      0.16
+    );
+    --material-theme-state-layers-light-secondaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-light-secondaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-light-secondaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-light-onsecondaryfixed-opacity-008: rgba(
+      44,
+      21,
+      20,
+      0.08
+    );
+    --material-theme-state-layers-light-onsecondaryfixed-opacity-012: rgba(
+      44,
+      21,
+      20,
+      0.12
+    );
+    --material-theme-state-layers-light-onsecondaryfixed-opacity-016: rgba(
+      44,
+      21,
+      20,
+      0.16
+    );
+    --material-theme-state-layers-light-secondaryfixeddim-opacity-008: rgba(
+      231,
+      189,
+      186,
+      0.08
+    );
+    --material-theme-state-layers-light-secondaryfixeddim-opacity-012: rgba(
+      231,
+      189,
+      186,
+      0.12
+    );
+    --material-theme-state-layers-light-secondaryfixeddim-opacity-016: rgba(
+      231,
+      189,
+      186,
+      0.16
+    );
+    --material-theme-state-layers-light-onsecondaryfixedvariant-opacity-008: rgba(
+      93,
+      63,
+      61,
+      0.08
+    );
+    --material-theme-state-layers-light-onsecondaryfixedvariant-opacity-012: rgba(
+      93,
+      63,
+      61,
+      0.12
+    );
+    --material-theme-state-layers-light-onsecondaryfixedvariant-opacity-016: rgba(
+      93,
+      63,
+      61,
+      0.16
+    );
+    --material-theme-state-layers-light-tertiaryfixed-opacity-008: rgba(
+      255,
+      222,
+      168,
+      0.08
+    );
+    --material-theme-state-layers-light-tertiaryfixed-opacity-012: rgba(
+      255,
+      222,
+      168,
+      0.12
+    );
+    --material-theme-state-layers-light-tertiaryfixed-opacity-016: rgba(
+      255,
+      222,
+      168,
+      0.16
+    );
+    --material-theme-state-layers-light-ontertiaryfixed-opacity-008: rgba(
+      39,
+      25,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-ontertiaryfixed-opacity-012: rgba(
+      39,
+      25,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-ontertiaryfixed-opacity-016: rgba(
+      39,
+      25,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-tertiaryfixeddim-opacity-008: rgba(
+      226,
+      194,
+      140,
+      0.08
+    );
+    --material-theme-state-layers-light-tertiaryfixeddim-opacity-012: rgba(
+      226,
+      194,
+      140,
+      0.12
+    );
+    --material-theme-state-layers-light-tertiaryfixeddim-opacity-016: rgba(
+      226,
+      194,
+      140,
+      0.16
+    );
+    --material-theme-state-layers-light-ontertiaryfixedvariant-opacity-008: rgba(
+      89,
+      67,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-ontertiaryfixedvariant-opacity-012: rgba(
+      89,
+      67,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-ontertiaryfixedvariant-opacity-016: rgba(
+      89,
+      67,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacedim-opacity-008: rgba(
+      232,
+      214,
+      212,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacedim-opacity-012: rgba(
+      232,
+      214,
+      212,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacedim-opacity-016: rgba(
+      232,
+      214,
+      212,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacebright-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacebright-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacebright-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacecontainerlowest-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacecontainerlowest-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacecontainerlowest-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacecontainerlow-opacity-008: rgba(
+      255,
+      240,
+      239,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacecontainerlow-opacity-012: rgba(
+      255,
+      240,
+      239,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacecontainerlow-opacity-016: rgba(
+      255,
+      240,
+      239,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacecontainer-opacity-008: rgba(
+      252,
+      234,
+      232,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacecontainer-opacity-012: rgba(
+      252,
+      234,
+      232,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacecontainer-opacity-016: rgba(
+      252,
+      234,
+      232,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacecontainerhigh-opacity-008: rgba(
+      246,
+      228,
+      226,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacecontainerhigh-opacity-012: rgba(
+      246,
+      228,
+      226,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacecontainerhigh-opacity-016: rgba(
+      246,
+      228,
+      226,
+      0.16
+    );
+    --material-theme-state-layers-light-surfacecontainerhighest-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-light-surfacecontainerhighest-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-light-surfacecontainerhighest-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-primary-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-primary-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-primary-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacetint-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacetint-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacetint-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-onprimary-opacity-008: rgba(
+      87,
+      29,
+      29,
+      0.08
+    );
+    --material-theme-state-layers-dark-onprimary-opacity-012: rgba(
+      87,
+      29,
+      29,
+      0.12
+    );
+    --material-theme-state-layers-dark-onprimary-opacity-016: rgba(
+      87,
+      29,
+      29,
+      0.16
+    );
+    --material-theme-state-layers-dark-primarycontainer-opacity-008: rgba(
+      115,
+      51,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-dark-primarycontainer-opacity-012: rgba(
+      115,
+      51,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-dark-primarycontainer-opacity-016: rgba(
+      115,
+      51,
+      49,
+      0.16
+    );
+    --material-theme-state-layers-dark-onprimarycontainer-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-onprimarycontainer-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-onprimarycontainer-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-secondary-opacity-008: rgba(
+      231,
+      189,
+      186,
+      0.08
+    );
+    --material-theme-state-layers-dark-secondary-opacity-012: rgba(
+      231,
+      189,
+      186,
+      0.12
+    );
+    --material-theme-state-layers-dark-secondary-opacity-016: rgba(
+      231,
+      189,
+      186,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsecondary-opacity-008: rgba(
+      68,
+      41,
+      40,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsecondary-opacity-012: rgba(
+      68,
+      41,
+      40,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsecondary-opacity-016: rgba(
+      68,
+      41,
+      40,
+      0.16
+    );
+    --material-theme-state-layers-dark-secondarycontainer-opacity-008: rgba(
+      93,
+      63,
+      61,
+      0.08
+    );
+    --material-theme-state-layers-dark-secondarycontainer-opacity-012: rgba(
+      93,
+      63,
+      61,
+      0.12
+    );
+    --material-theme-state-layers-dark-secondarycontainer-opacity-016: rgba(
+      93,
+      63,
+      61,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsecondarycontainer-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsecondarycontainer-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsecondarycontainer-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-tertiary-opacity-008: rgba(
+      226,
+      194,
+      140,
+      0.08
+    );
+    --material-theme-state-layers-dark-tertiary-opacity-012: rgba(
+      226,
+      194,
+      140,
+      0.12
+    );
+    --material-theme-state-layers-dark-tertiary-opacity-016: rgba(
+      226,
+      194,
+      140,
+      0.16
+    );
+    --material-theme-state-layers-dark-ontertiary-opacity-008: rgba(
+      64,
+      45,
+      5,
+      0.08
+    );
+    --material-theme-state-layers-dark-ontertiary-opacity-012: rgba(
+      64,
+      45,
+      5,
+      0.12
+    );
+    --material-theme-state-layers-dark-ontertiary-opacity-016: rgba(
+      64,
+      45,
+      5,
+      0.16
+    );
+    --material-theme-state-layers-dark-tertiarycontainer-opacity-008: rgba(
+      89,
+      67,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-dark-tertiarycontainer-opacity-012: rgba(
+      89,
+      67,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-dark-tertiarycontainer-opacity-016: rgba(
+      89,
+      67,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-dark-ontertiarycontainer-opacity-008: rgba(
+      255,
+      222,
+      168,
+      0.08
+    );
+    --material-theme-state-layers-dark-ontertiarycontainer-opacity-012: rgba(
+      255,
+      222,
+      168,
+      0.12
+    );
+    --material-theme-state-layers-dark-ontertiarycontainer-opacity-016: rgba(
+      255,
+      222,
+      168,
+      0.16
+    );
+    --material-theme-state-layers-dark-error-opacity-008: rgba(
+      255,
+      180,
+      171,
+      0.08
+    );
+    --material-theme-state-layers-dark-error-opacity-012: rgba(
+      255,
+      180,
+      171,
+      0.12
+    );
+    --material-theme-state-layers-dark-error-opacity-016: rgba(
+      255,
+      180,
+      171,
+      0.16
+    );
+    --material-theme-state-layers-dark-onerror-opacity-008: rgba(105, 0, 5, 0.08);
+    --material-theme-state-layers-dark-onerror-opacity-012: rgba(105, 0, 5, 0.12);
+    --material-theme-state-layers-dark-onerror-opacity-016: rgba(105, 0, 5, 0.16);
+    --material-theme-state-layers-dark-errorcontainer-opacity-008: rgba(
+      147,
+      0,
+      10,
+      0.08
+    );
+    --material-theme-state-layers-dark-errorcontainer-opacity-012: rgba(
+      147,
+      0,
+      10,
+      0.12
+    );
+    --material-theme-state-layers-dark-errorcontainer-opacity-016: rgba(
+      147,
+      0,
+      10,
+      0.16
+    );
+    --material-theme-state-layers-dark-onerrorcontainer-opacity-008: rgba(
+      255,
+      218,
+      214,
+      0.08
+    );
+    --material-theme-state-layers-dark-onerrorcontainer-opacity-012: rgba(
+      255,
+      218,
+      214,
+      0.12
+    );
+    --material-theme-state-layers-dark-onerrorcontainer-opacity-016: rgba(
+      255,
+      218,
+      214,
+      0.16
+    );
+    --material-theme-state-layers-dark-background-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-background-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-background-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-onbackground-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-onbackground-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-onbackground-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-surface-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-surface-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-surface-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsurface-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsurface-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsurface-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacevariant-opacity-008: rgba(
+      83,
+      67,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacevariant-opacity-012: rgba(
+      83,
+      67,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacevariant-opacity-016: rgba(
+      83,
+      67,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsurfacevariant-opacity-008: rgba(
+      216,
+      194,
+      192,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsurfacevariant-opacity-012: rgba(
+      216,
+      194,
+      192,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsurfacevariant-opacity-016: rgba(
+      216,
+      194,
+      192,
+      0.16
+    );
+    --material-theme-state-layers-dark-outline-opacity-008: rgba(
+      160,
+      140,
+      139,
+      0.08
+    );
+    --material-theme-state-layers-dark-outline-opacity-012: rgba(
+      160,
+      140,
+      139,
+      0.12
+    );
+    --material-theme-state-layers-dark-outline-opacity-016: rgba(
+      160,
+      140,
+      139,
+      0.16
+    );
+    --material-theme-state-layers-dark-outlinevariant-opacity-008: rgba(
+      83,
+      67,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-dark-outlinevariant-opacity-012: rgba(
+      83,
+      67,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-dark-outlinevariant-opacity-016: rgba(
+      83,
+      67,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-dark-shadow-opacity-008: rgba(0, 0, 0, 0.08);
+    --material-theme-state-layers-dark-shadow-opacity-012: rgba(0, 0, 0, 0.12);
+    --material-theme-state-layers-dark-shadow-opacity-016: rgba(0, 0, 0, 0.16);
+    --material-theme-state-layers-dark-scrim-opacity-008: rgba(0, 0, 0, 0.08);
+    --material-theme-state-layers-dark-scrim-opacity-012: rgba(0, 0, 0, 0.12);
+    --material-theme-state-layers-dark-scrim-opacity-016: rgba(0, 0, 0, 0.16);
+    --material-theme-state-layers-dark-inversesurface-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-inversesurface-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-inversesurface-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-inverseonsurface-opacity-008: rgba(
+      56,
+      46,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-dark-inverseonsurface-opacity-012: rgba(
+      56,
+      46,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-dark-inverseonsurface-opacity-016: rgba(
+      56,
+      46,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-dark-inverseprimary-opacity-008: rgba(
+      144,
+      74,
+      71,
+      0.08
+    );
+    --material-theme-state-layers-dark-inverseprimary-opacity-012: rgba(
+      144,
+      74,
+      71,
+      0.12
+    );
+    --material-theme-state-layers-dark-inverseprimary-opacity-016: rgba(
+      144,
+      74,
+      71,
+      0.16
+    );
+    --material-theme-state-layers-dark-primaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-primaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-primaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-onprimaryfixed-opacity-008: rgba(
+      59,
+      8,
+      10,
+      0.08
+    );
+    --material-theme-state-layers-dark-onprimaryfixed-opacity-012: rgba(
+      59,
+      8,
+      10,
+      0.12
+    );
+    --material-theme-state-layers-dark-onprimaryfixed-opacity-016: rgba(
+      59,
+      8,
+      10,
+      0.16
+    );
+    --material-theme-state-layers-dark-primaryfixeddim-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-primaryfixeddim-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-primaryfixeddim-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-onprimaryfixedvariant-opacity-008: rgba(
+      115,
+      51,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-dark-onprimaryfixedvariant-opacity-012: rgba(
+      115,
+      51,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-dark-onprimaryfixedvariant-opacity-016: rgba(
+      115,
+      51,
+      49,
+      0.16
+    );
+    --material-theme-state-layers-dark-secondaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-secondaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-secondaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsecondaryfixed-opacity-008: rgba(
+      44,
+      21,
+      20,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsecondaryfixed-opacity-012: rgba(
+      44,
+      21,
+      20,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsecondaryfixed-opacity-016: rgba(
+      44,
+      21,
+      20,
+      0.16
+    );
+    --material-theme-state-layers-dark-secondaryfixeddim-opacity-008: rgba(
+      231,
+      189,
+      186,
+      0.08
+    );
+    --material-theme-state-layers-dark-secondaryfixeddim-opacity-012: rgba(
+      231,
+      189,
+      186,
+      0.12
+    );
+    --material-theme-state-layers-dark-secondaryfixeddim-opacity-016: rgba(
+      231,
+      189,
+      186,
+      0.16
+    );
+    --material-theme-state-layers-dark-onsecondaryfixedvariant-opacity-008: rgba(
+      93,
+      63,
+      61,
+      0.08
+    );
+    --material-theme-state-layers-dark-onsecondaryfixedvariant-opacity-012: rgba(
+      93,
+      63,
+      61,
+      0.12
+    );
+    --material-theme-state-layers-dark-onsecondaryfixedvariant-opacity-016: rgba(
+      93,
+      63,
+      61,
+      0.16
+    );
+    --material-theme-state-layers-dark-tertiaryfixed-opacity-008: rgba(
+      255,
+      222,
+      168,
+      0.08
+    );
+    --material-theme-state-layers-dark-tertiaryfixed-opacity-012: rgba(
+      255,
+      222,
+      168,
+      0.12
+    );
+    --material-theme-state-layers-dark-tertiaryfixed-opacity-016: rgba(
+      255,
+      222,
+      168,
+      0.16
+    );
+    --material-theme-state-layers-dark-ontertiaryfixed-opacity-008: rgba(
+      39,
+      25,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-ontertiaryfixed-opacity-012: rgba(
+      39,
+      25,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-ontertiaryfixed-opacity-016: rgba(
+      39,
+      25,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-tertiaryfixeddim-opacity-008: rgba(
+      226,
+      194,
+      140,
+      0.08
+    );
+    --material-theme-state-layers-dark-tertiaryfixeddim-opacity-012: rgba(
+      226,
+      194,
+      140,
+      0.12
+    );
+    --material-theme-state-layers-dark-tertiaryfixeddim-opacity-016: rgba(
+      226,
+      194,
+      140,
+      0.16
+    );
+    --material-theme-state-layers-dark-ontertiaryfixedvariant-opacity-008: rgba(
+      89,
+      67,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-dark-ontertiaryfixedvariant-opacity-012: rgba(
+      89,
+      67,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-dark-ontertiaryfixedvariant-opacity-016: rgba(
+      89,
+      67,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacedim-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacedim-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacedim-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacebright-opacity-008: rgba(
+      66,
+      55,
+      54,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacebright-opacity-012: rgba(
+      66,
+      55,
+      54,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacebright-opacity-016: rgba(
+      66,
+      55,
+      54,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacecontainerlowest-opacity-008: rgba(
+      20,
+      12,
+      12,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacecontainerlowest-opacity-012: rgba(
+      20,
+      12,
+      12,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacecontainerlowest-opacity-016: rgba(
+      20,
+      12,
+      12,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacecontainerlow-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacecontainerlow-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacecontainerlow-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacecontainer-opacity-008: rgba(
+      39,
+      29,
+      29,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacecontainer-opacity-012: rgba(
+      39,
+      29,
+      29,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacecontainer-opacity-016: rgba(
+      39,
+      29,
+      29,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacecontainerhigh-opacity-008: rgba(
+      50,
+      40,
+      39,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacecontainerhigh-opacity-012: rgba(
+      50,
+      40,
+      39,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacecontainerhigh-opacity-016: rgba(
+      50,
+      40,
+      39,
+      0.16
+    );
+    --material-theme-state-layers-dark-surfacecontainerhighest-opacity-008: rgba(
+      61,
+      50,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-dark-surfacecontainerhighest-opacity-012: rgba(
+      61,
+      50,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-dark-surfacecontainerhighest-opacity-016: rgba(
+      61,
+      50,
+      49,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-primary-opacity-008: rgba(
+      68,
+      15,
+      16,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-primary-opacity-012: rgba(
+      68,
+      15,
+      16,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-primary-opacity-016: rgba(
+      68,
+      15,
+      16,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacetint-opacity-008: rgba(
+      144,
+      74,
+      71,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacetint-opacity-012: rgba(
+      144,
+      74,
+      71,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacetint-opacity-016: rgba(
+      144,
+      74,
+      71,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onprimary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onprimary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onprimary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-primarycontainer-opacity-008: rgba(
+      110,
+      47,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-primarycontainer-opacity-012: rgba(
+      110,
+      47,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-primarycontainer-opacity-016: rgba(
+      110,
+      47,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onprimarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onprimarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onprimarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-secondary-opacity-008: rgba(
+      52,
+      27,
+      26,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-secondary-opacity-012: rgba(
+      52,
+      27,
+      26,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-secondary-opacity-016: rgba(
+      52,
+      27,
+      26,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-secondarycontainer-opacity-008: rgba(
+      89,
+      59,
+      57,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-secondarycontainer-opacity-012: rgba(
+      89,
+      59,
+      57,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-secondarycontainer-opacity-016: rgba(
+      89,
+      59,
+      57,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-tertiary-opacity-008: rgba(
+      47,
+      31,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-tertiary-opacity-012: rgba(
+      47,
+      31,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-tertiary-opacity-016: rgba(
+      47,
+      31,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-tertiarycontainer-opacity-008: rgba(
+      85,
+      63,
+      21,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-tertiarycontainer-opacity-012: rgba(
+      85,
+      63,
+      21,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-tertiarycontainer-opacity-016: rgba(
+      85,
+      63,
+      21,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-error-opacity-008: rgba(
+      78,
+      0,
+      2,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-error-opacity-012: rgba(
+      78,
+      0,
+      2,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-error-opacity-016: rgba(
+      78,
+      0,
+      2,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onerror-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onerror-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onerror-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-errorcontainer-opacity-008: rgba(
+      140,
+      0,
+      9,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-errorcontainer-opacity-012: rgba(
+      140,
+      0,
+      9,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-errorcontainer-opacity-016: rgba(
+      140,
+      0,
+      9,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onerrorcontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onerrorcontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onerrorcontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-background-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-background-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-background-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onbackground-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onbackground-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onbackground-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surface-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surface-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surface-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsurface-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsurface-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsurface-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacevariant-opacity-008: rgba(
+      244,
+      221,
+      219,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacevariant-opacity-012: rgba(
+      244,
+      221,
+      219,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacevariant-opacity-016: rgba(
+      244,
+      221,
+      219,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsurfacevariant-opacity-008: rgba(
+      46,
+      33,
+      32,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsurfacevariant-opacity-012: rgba(
+      46,
+      33,
+      32,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsurfacevariant-opacity-016: rgba(
+      46,
+      33,
+      32,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-outline-opacity-008: rgba(
+      78,
+      63,
+      62,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-outline-opacity-012: rgba(
+      78,
+      63,
+      62,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-outline-opacity-016: rgba(
+      78,
+      63,
+      62,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-outlinevariant-opacity-008: rgba(
+      78,
+      63,
+      62,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-outlinevariant-opacity-012: rgba(
+      78,
+      63,
+      62,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-outlinevariant-opacity-016: rgba(
+      78,
+      63,
+      62,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-shadow-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-shadow-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-shadow-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-scrim-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-scrim-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-scrim-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-inversesurface-opacity-008: rgba(
+      56,
+      46,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-inversesurface-opacity-012: rgba(
+      56,
+      46,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-inversesurface-opacity-016: rgba(
+      56,
+      46,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-inverseonsurface-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-inverseonsurface-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-inverseonsurface-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-inverseprimary-opacity-008: rgba(
+      255,
+      231,
+      229,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-inverseprimary-opacity-012: rgba(
+      255,
+      231,
+      229,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-inverseprimary-opacity-016: rgba(
+      255,
+      231,
+      229,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixed-opacity-008: rgba(
+      110,
+      47,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixed-opacity-012: rgba(
+      110,
+      47,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixed-opacity-016: rgba(
+      110,
+      47,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixeddim-opacity-008: rgba(
+      82,
+      26,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixeddim-opacity-012: rgba(
+      82,
+      26,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-primaryfixeddim-opacity-016: rgba(
+      82,
+      26,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onprimaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixed-opacity-008: rgba(
+      89,
+      59,
+      57,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixed-opacity-012: rgba(
+      89,
+      59,
+      57,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixed-opacity-016: rgba(
+      89,
+      59,
+      57,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixeddim-opacity-008: rgba(
+      64,
+      38,
+      36,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixeddim-opacity-012: rgba(
+      64,
+      38,
+      36,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-secondaryfixeddim-opacity-016: rgba(
+      64,
+      38,
+      36,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-onsecondaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixed-opacity-008: rgba(
+      85,
+      63,
+      21,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixed-opacity-012: rgba(
+      85,
+      63,
+      21,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixed-opacity-016: rgba(
+      85,
+      63,
+      21,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixeddim-opacity-008: rgba(
+      60,
+      41,
+      2,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixeddim-opacity-012: rgba(
+      60,
+      41,
+      2,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-tertiaryfixeddim-opacity-016: rgba(
+      60,
+      41,
+      2,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-ontertiaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacedim-opacity-008: rgba(
+      232,
+      214,
+      212,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacedim-opacity-012: rgba(
+      232,
+      214,
+      212,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacedim-opacity-016: rgba(
+      232,
+      214,
+      212,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacebright-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacebright-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacebright-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlowest-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlowest-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlowest-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlow-opacity-008: rgba(
+      255,
+      240,
+      239,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlow-opacity-012: rgba(
+      255,
+      240,
+      239,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerlow-opacity-016: rgba(
+      255,
+      240,
+      239,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainer-opacity-008: rgba(
+      252,
+      234,
+      232,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainer-opacity-012: rgba(
+      252,
+      234,
+      232,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainer-opacity-016: rgba(
+      252,
+      234,
+      232,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhigh-opacity-008: rgba(
+      246,
+      228,
+      226,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhigh-opacity-012: rgba(
+      246,
+      228,
+      226,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhigh-opacity-016: rgba(
+      246,
+      228,
+      226,
+      0.16
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhighest-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhighest-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-light-high-contrast-surfacecontainerhighest-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-primary-opacity-008: rgba(
+      255,
+      249,
+      249,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-primary-opacity-012: rgba(
+      255,
+      249,
+      249,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-primary-opacity-016: rgba(
+      255,
+      249,
+      249,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacetint-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacetint-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacetint-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimary-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimary-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimary-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-primarycontainer-opacity-008: rgba(
+      255,
+      185,
+      181,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-primarycontainer-opacity-012: rgba(
+      255,
+      185,
+      181,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-primarycontainer-opacity-016: rgba(
+      255,
+      185,
+      181,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-secondary-opacity-008: rgba(
+      255,
+      249,
+      249,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-secondary-opacity-012: rgba(
+      255,
+      249,
+      249,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-secondary-opacity-016: rgba(
+      255,
+      249,
+      249,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondary-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondary-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondary-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-secondarycontainer-opacity-008: rgba(
+      235,
+      193,
+      190,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-secondarycontainer-opacity-012: rgba(
+      235,
+      193,
+      190,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-secondarycontainer-opacity-016: rgba(
+      235,
+      193,
+      190,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiary-opacity-008: rgba(
+      255,
+      250,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiary-opacity-012: rgba(
+      255,
+      250,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiary-opacity-016: rgba(
+      255,
+      250,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiary-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiary-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiary-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiarycontainer-opacity-008: rgba(
+      231,
+      198,
+      144,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiarycontainer-opacity-012: rgba(
+      231,
+      198,
+      144,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiarycontainer-opacity-016: rgba(
+      231,
+      198,
+      144,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-error-opacity-008: rgba(
+      255,
+      249,
+      249,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-error-opacity-012: rgba(
+      255,
+      249,
+      249,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-error-opacity-016: rgba(
+      255,
+      249,
+      249,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onerror-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onerror-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onerror-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-errorcontainer-opacity-008: rgba(
+      255,
+      186,
+      177,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-errorcontainer-opacity-012: rgba(
+      255,
+      186,
+      177,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-errorcontainer-opacity-016: rgba(
+      255,
+      186,
+      177,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onerrorcontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onerrorcontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onerrorcontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-background-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-background-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-background-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onbackground-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onbackground-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onbackground-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surface-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surface-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surface-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurface-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurface-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurface-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacevariant-opacity-008: rgba(
+      83,
+      67,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacevariant-opacity-012: rgba(
+      83,
+      67,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacevariant-opacity-016: rgba(
+      83,
+      67,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurfacevariant-opacity-008: rgba(
+      255,
+      249,
+      249,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurfacevariant-opacity-012: rgba(
+      255,
+      249,
+      249,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsurfacevariant-opacity-016: rgba(
+      255,
+      249,
+      249,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-outline-opacity-008: rgba(
+      220,
+      198,
+      196,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-outline-opacity-012: rgba(
+      220,
+      198,
+      196,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-outline-opacity-016: rgba(
+      220,
+      198,
+      196,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-outlinevariant-opacity-008: rgba(
+      220,
+      198,
+      196,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-outlinevariant-opacity-012: rgba(
+      220,
+      198,
+      196,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-outlinevariant-opacity-016: rgba(
+      220,
+      198,
+      196,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-shadow-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-shadow-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-shadow-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-scrim-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-scrim-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-scrim-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-inversesurface-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-inversesurface-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-inversesurface-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseonsurface-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseonsurface-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseonsurface-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseprimary-opacity-008: rgba(
+      78,
+      23,
+      23,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseprimary-opacity-012: rgba(
+      78,
+      23,
+      23,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-inverseprimary-opacity-016: rgba(
+      78,
+      23,
+      23,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixed-opacity-008: rgba(
+      255,
+      224,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixed-opacity-012: rgba(
+      255,
+      224,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixed-opacity-016: rgba(
+      255,
+      224,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixed-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixed-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixed-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixeddim-opacity-008: rgba(
+      255,
+      185,
+      181,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixeddim-opacity-012: rgba(
+      255,
+      185,
+      181,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-primaryfixeddim-opacity-016: rgba(
+      255,
+      185,
+      181,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixedvariant-opacity-008: rgba(
+      51,
+      4,
+      6,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixedvariant-opacity-012: rgba(
+      51,
+      4,
+      6,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onprimaryfixedvariant-opacity-016: rgba(
+      51,
+      4,
+      6,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixed-opacity-008: rgba(
+      255,
+      224,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixed-opacity-012: rgba(
+      255,
+      224,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixed-opacity-016: rgba(
+      255,
+      224,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixed-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixed-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixed-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixeddim-opacity-008: rgba(
+      235,
+      193,
+      190,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixeddim-opacity-012: rgba(
+      235,
+      193,
+      190,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-secondaryfixeddim-opacity-016: rgba(
+      235,
+      193,
+      190,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixedvariant-opacity-008: rgba(
+      38,
+      16,
+      15,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixedvariant-opacity-012: rgba(
+      38,
+      16,
+      15,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-onsecondaryfixedvariant-opacity-016: rgba(
+      38,
+      16,
+      15,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixed-opacity-008: rgba(
+      255,
+      227,
+      183,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixed-opacity-012: rgba(
+      255,
+      227,
+      183,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixed-opacity-016: rgba(
+      255,
+      227,
+      183,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixed-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixed-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixed-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixeddim-opacity-008: rgba(
+      231,
+      198,
+      144,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixeddim-opacity-012: rgba(
+      231,
+      198,
+      144,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-tertiaryfixeddim-opacity-016: rgba(
+      231,
+      198,
+      144,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixedvariant-opacity-008: rgba(
+      32,
+      20,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixedvariant-opacity-012: rgba(
+      32,
+      20,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-ontertiaryfixedvariant-opacity-016: rgba(
+      32,
+      20,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacedim-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacedim-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacedim-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacebright-opacity-008: rgba(
+      66,
+      55,
+      54,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacebright-opacity-012: rgba(
+      66,
+      55,
+      54,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacebright-opacity-016: rgba(
+      66,
+      55,
+      54,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlowest-opacity-008: rgba(
+      20,
+      12,
+      12,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlowest-opacity-012: rgba(
+      20,
+      12,
+      12,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlowest-opacity-016: rgba(
+      20,
+      12,
+      12,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlow-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlow-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerlow-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainer-opacity-008: rgba(
+      39,
+      29,
+      29,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainer-opacity-012: rgba(
+      39,
+      29,
+      29,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainer-opacity-016: rgba(
+      39,
+      29,
+      29,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhigh-opacity-008: rgba(
+      50,
+      40,
+      39,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhigh-opacity-012: rgba(
+      50,
+      40,
+      39,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhigh-opacity-016: rgba(
+      50,
+      40,
+      39,
+      0.16
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhighest-opacity-008: rgba(
+      61,
+      50,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhighest-opacity-012: rgba(
+      61,
+      50,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-dark-high-contrast-surfacecontainerhighest-opacity-016: rgba(
+      61,
+      50,
+      49,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-primary-opacity-008: rgba(
+      110,
+      47,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-primary-opacity-012: rgba(
+      110,
+      47,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-primary-opacity-016: rgba(
+      110,
+      47,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacetint-opacity-008: rgba(
+      144,
+      74,
+      71,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacetint-opacity-012: rgba(
+      144,
+      74,
+      71,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacetint-opacity-016: rgba(
+      144,
+      74,
+      71,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-primarycontainer-opacity-008: rgba(
+      170,
+      95,
+      92,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-primarycontainer-opacity-012: rgba(
+      170,
+      95,
+      92,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-primarycontainer-opacity-016: rgba(
+      170,
+      95,
+      92,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-secondary-opacity-008: rgba(
+      89,
+      59,
+      57,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-secondary-opacity-012: rgba(
+      89,
+      59,
+      57,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-secondary-opacity-016: rgba(
+      89,
+      59,
+      57,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-secondarycontainer-opacity-008: rgba(
+      143,
+      108,
+      106,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-secondarycontainer-opacity-012: rgba(
+      143,
+      108,
+      106,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-secondarycontainer-opacity-016: rgba(
+      143,
+      108,
+      106,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiary-opacity-008: rgba(
+      85,
+      63,
+      21,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiary-opacity-012: rgba(
+      85,
+      63,
+      21,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiary-opacity-016: rgba(
+      85,
+      63,
+      21,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiary-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiary-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiary-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiarycontainer-opacity-008: rgba(
+      139,
+      113,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiarycontainer-opacity-012: rgba(
+      139,
+      113,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiarycontainer-opacity-016: rgba(
+      139,
+      113,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiarycontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiarycontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiarycontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-error-opacity-008: rgba(
+      140,
+      0,
+      9,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-error-opacity-012: rgba(
+      140,
+      0,
+      9,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-error-opacity-016: rgba(
+      140,
+      0,
+      9,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onerror-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onerror-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onerror-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-errorcontainer-opacity-008: rgba(
+      218,
+      52,
+      46,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-errorcontainer-opacity-012: rgba(
+      218,
+      52,
+      46,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-errorcontainer-opacity-016: rgba(
+      218,
+      52,
+      46,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onerrorcontainer-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onerrorcontainer-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onerrorcontainer-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-background-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-background-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-background-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onbackground-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onbackground-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onbackground-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surface-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surface-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surface-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurface-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurface-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurface-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacevariant-opacity-008: rgba(
+      244,
+      221,
+      219,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacevariant-opacity-012: rgba(
+      244,
+      221,
+      219,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacevariant-opacity-016: rgba(
+      244,
+      221,
+      219,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurfacevariant-opacity-008: rgba(
+      78,
+      63,
+      62,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurfacevariant-opacity-012: rgba(
+      78,
+      63,
+      62,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsurfacevariant-opacity-016: rgba(
+      78,
+      63,
+      62,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-outline-opacity-008: rgba(
+      108,
+      91,
+      90,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-outline-opacity-012: rgba(
+      108,
+      91,
+      90,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-outline-opacity-016: rgba(
+      108,
+      91,
+      90,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-outlinevariant-opacity-008: rgba(
+      137,
+      118,
+      117,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-outlinevariant-opacity-012: rgba(
+      137,
+      118,
+      117,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-outlinevariant-opacity-016: rgba(
+      137,
+      118,
+      117,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-shadow-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-shadow-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-shadow-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-scrim-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-scrim-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-scrim-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-inversesurface-opacity-008: rgba(
+      56,
+      46,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-inversesurface-opacity-012: rgba(
+      56,
+      46,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-inversesurface-opacity-016: rgba(
+      56,
+      46,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseonsurface-opacity-008: rgba(
+      255,
+      237,
+      235,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseonsurface-opacity-012: rgba(
+      255,
+      237,
+      235,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseonsurface-opacity-016: rgba(
+      255,
+      237,
+      235,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseprimary-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseprimary-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-inverseprimary-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixed-opacity-008: rgba(
+      170,
+      95,
+      92,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixed-opacity-012: rgba(
+      170,
+      95,
+      92,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixed-opacity-016: rgba(
+      170,
+      95,
+      92,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixeddim-opacity-008: rgba(
+      141,
+      72,
+      69,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixeddim-opacity-012: rgba(
+      141,
+      72,
+      69,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-primaryfixeddim-opacity-016: rgba(
+      141,
+      72,
+      69,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onprimaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixed-opacity-008: rgba(
+      143,
+      108,
+      106,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixed-opacity-012: rgba(
+      143,
+      108,
+      106,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixed-opacity-016: rgba(
+      143,
+      108,
+      106,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixeddim-opacity-008: rgba(
+      116,
+      84,
+      82,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixeddim-opacity-012: rgba(
+      116,
+      84,
+      82,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-secondaryfixeddim-opacity-016: rgba(
+      116,
+      84,
+      82,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-onsecondaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixed-opacity-008: rgba(
+      139,
+      113,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixed-opacity-012: rgba(
+      139,
+      113,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixed-opacity-016: rgba(
+      139,
+      113,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixed-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixed-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixed-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixeddim-opacity-008: rgba(
+      112,
+      88,
+      44,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixeddim-opacity-012: rgba(
+      112,
+      88,
+      44,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-tertiaryfixeddim-opacity-016: rgba(
+      112,
+      88,
+      44,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixedvariant-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixedvariant-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-ontertiaryfixedvariant-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacedim-opacity-008: rgba(
+      232,
+      214,
+      212,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacedim-opacity-012: rgba(
+      232,
+      214,
+      212,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacedim-opacity-016: rgba(
+      232,
+      214,
+      212,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacebright-opacity-008: rgba(
+      255,
+      248,
+      247,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacebright-opacity-012: rgba(
+      255,
+      248,
+      247,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacebright-opacity-016: rgba(
+      255,
+      248,
+      247,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlowest-opacity-008: rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlowest-opacity-012: rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlowest-opacity-016: rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlow-opacity-008: rgba(
+      255,
+      240,
+      239,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlow-opacity-012: rgba(
+      255,
+      240,
+      239,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerlow-opacity-016: rgba(
+      255,
+      240,
+      239,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainer-opacity-008: rgba(
+      252,
+      234,
+      232,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainer-opacity-012: rgba(
+      252,
+      234,
+      232,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainer-opacity-016: rgba(
+      252,
+      234,
+      232,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhigh-opacity-008: rgba(
+      246,
+      228,
+      226,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhigh-opacity-012: rgba(
+      246,
+      228,
+      226,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhigh-opacity-016: rgba(
+      246,
+      228,
+      226,
+      0.16
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhighest-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhighest-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-light-medium-contrast-surfacecontainerhighest-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-primary-opacity-008: rgba(
+      255,
+      185,
+      181,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-primary-opacity-012: rgba(
+      255,
+      185,
+      181,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-primary-opacity-016: rgba(
+      255,
+      185,
+      181,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacetint-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacetint-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacetint-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimary-opacity-008: rgba(
+      51,
+      4,
+      6,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimary-opacity-012: rgba(
+      51,
+      4,
+      6,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimary-opacity-016: rgba(
+      51,
+      4,
+      6,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-primarycontainer-opacity-008: rgba(
+      203,
+      123,
+      118,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-primarycontainer-opacity-012: rgba(
+      203,
+      123,
+      118,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-primarycontainer-opacity-016: rgba(
+      203,
+      123,
+      118,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondary-opacity-008: rgba(
+      235,
+      193,
+      190,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondary-opacity-012: rgba(
+      235,
+      193,
+      190,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondary-opacity-016: rgba(
+      235,
+      193,
+      190,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondary-opacity-008: rgba(
+      38,
+      16,
+      15,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondary-opacity-012: rgba(
+      38,
+      16,
+      15,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondary-opacity-016: rgba(
+      38,
+      16,
+      15,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondarycontainer-opacity-008: rgba(
+      173,
+      136,
+      133,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondarycontainer-opacity-012: rgba(
+      173,
+      136,
+      133,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondarycontainer-opacity-016: rgba(
+      173,
+      136,
+      133,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiary-opacity-008: rgba(
+      231,
+      198,
+      144,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiary-opacity-012: rgba(
+      231,
+      198,
+      144,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiary-opacity-016: rgba(
+      231,
+      198,
+      144,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiary-opacity-008: rgba(
+      32,
+      20,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiary-opacity-012: rgba(
+      32,
+      20,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiary-opacity-016: rgba(
+      32,
+      20,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiarycontainer-opacity-008: rgba(
+      169,
+      141,
+      91,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiarycontainer-opacity-012: rgba(
+      169,
+      141,
+      91,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiarycontainer-opacity-016: rgba(
+      169,
+      141,
+      91,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiarycontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiarycontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiarycontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-error-opacity-008: rgba(
+      255,
+      186,
+      177,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-error-opacity-012: rgba(
+      255,
+      186,
+      177,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-error-opacity-016: rgba(
+      255,
+      186,
+      177,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerror-opacity-008: rgba(
+      55,
+      0,
+      1,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerror-opacity-012: rgba(
+      55,
+      0,
+      1,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerror-opacity-016: rgba(
+      55,
+      0,
+      1,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-errorcontainer-opacity-008: rgba(
+      255,
+      84,
+      73,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-errorcontainer-opacity-012: rgba(
+      255,
+      84,
+      73,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-errorcontainer-opacity-016: rgba(
+      255,
+      84,
+      73,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerrorcontainer-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerrorcontainer-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onerrorcontainer-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-background-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-background-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-background-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onbackground-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onbackground-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onbackground-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surface-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surface-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surface-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurface-opacity-008: rgba(
+      255,
+      249,
+      249,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurface-opacity-012: rgba(
+      255,
+      249,
+      249,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurface-opacity-016: rgba(
+      255,
+      249,
+      249,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacevariant-opacity-008: rgba(
+      83,
+      67,
+      66,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacevariant-opacity-012: rgba(
+      83,
+      67,
+      66,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacevariant-opacity-016: rgba(
+      83,
+      67,
+      66,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurfacevariant-opacity-008: rgba(
+      220,
+      198,
+      196,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurfacevariant-opacity-012: rgba(
+      220,
+      198,
+      196,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsurfacevariant-opacity-016: rgba(
+      220,
+      198,
+      196,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-outline-opacity-008: rgba(
+      179,
+      158,
+      157,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-outline-opacity-012: rgba(
+      179,
+      158,
+      157,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-outline-opacity-016: rgba(
+      179,
+      158,
+      157,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-outlinevariant-opacity-008: rgba(
+      146,
+      127,
+      125,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-outlinevariant-opacity-012: rgba(
+      146,
+      127,
+      125,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-outlinevariant-opacity-016: rgba(
+      146,
+      127,
+      125,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-shadow-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-shadow-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-shadow-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-scrim-opacity-008: rgba(
+      0,
+      0,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-scrim-opacity-012: rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-scrim-opacity-016: rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-inversesurface-opacity-008: rgba(
+      241,
+      222,
+      221,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-inversesurface-opacity-012: rgba(
+      241,
+      222,
+      221,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-inversesurface-opacity-016: rgba(
+      241,
+      222,
+      221,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseonsurface-opacity-008: rgba(
+      50,
+      40,
+      39,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseonsurface-opacity-012: rgba(
+      50,
+      40,
+      39,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseonsurface-opacity-016: rgba(
+      50,
+      40,
+      39,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseprimary-opacity-008: rgba(
+      116,
+      52,
+      50,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseprimary-opacity-012: rgba(
+      116,
+      52,
+      50,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-inverseprimary-opacity-016: rgba(
+      116,
+      52,
+      50,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixed-opacity-008: rgba(
+      44,
+      1,
+      3,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixed-opacity-012: rgba(
+      44,
+      1,
+      3,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixed-opacity-016: rgba(
+      44,
+      1,
+      3,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixeddim-opacity-008: rgba(
+      255,
+      179,
+      175,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixeddim-opacity-012: rgba(
+      255,
+      179,
+      175,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-primaryfixeddim-opacity-016: rgba(
+      255,
+      179,
+      175,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixedvariant-opacity-008: rgba(
+      94,
+      35,
+      34,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixedvariant-opacity-012: rgba(
+      94,
+      35,
+      34,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onprimaryfixedvariant-opacity-016: rgba(
+      94,
+      35,
+      34,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixed-opacity-008: rgba(
+      255,
+      218,
+      215,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixed-opacity-012: rgba(
+      255,
+      218,
+      215,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixed-opacity-016: rgba(
+      255,
+      218,
+      215,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixed-opacity-008: rgba(
+      32,
+      11,
+      10,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixed-opacity-012: rgba(
+      32,
+      11,
+      10,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixed-opacity-016: rgba(
+      32,
+      11,
+      10,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixeddim-opacity-008: rgba(
+      231,
+      189,
+      186,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixeddim-opacity-012: rgba(
+      231,
+      189,
+      186,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-secondaryfixeddim-opacity-016: rgba(
+      231,
+      189,
+      186,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixedvariant-opacity-008: rgba(
+      75,
+      47,
+      45,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixedvariant-opacity-012: rgba(
+      75,
+      47,
+      45,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-onsecondaryfixedvariant-opacity-016: rgba(
+      75,
+      47,
+      45,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixed-opacity-008: rgba(
+      255,
+      222,
+      168,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixed-opacity-012: rgba(
+      255,
+      222,
+      168,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixed-opacity-016: rgba(
+      255,
+      222,
+      168,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixed-opacity-008: rgba(
+      26,
+      15,
+      0,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixed-opacity-012: rgba(
+      26,
+      15,
+      0,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixed-opacity-016: rgba(
+      26,
+      15,
+      0,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixeddim-opacity-008: rgba(
+      226,
+      194,
+      140,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixeddim-opacity-012: rgba(
+      226,
+      194,
+      140,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-tertiaryfixeddim-opacity-016: rgba(
+      226,
+      194,
+      140,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixedvariant-opacity-008: rgba(
+      71,
+      51,
+      9,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixedvariant-opacity-012: rgba(
+      71,
+      51,
+      9,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-ontertiaryfixedvariant-opacity-016: rgba(
+      71,
+      51,
+      9,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacedim-opacity-008: rgba(
+      26,
+      17,
+      17,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacedim-opacity-012: rgba(
+      26,
+      17,
+      17,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacedim-opacity-016: rgba(
+      26,
+      17,
+      17,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacebright-opacity-008: rgba(
+      66,
+      55,
+      54,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacebright-opacity-012: rgba(
+      66,
+      55,
+      54,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacebright-opacity-016: rgba(
+      66,
+      55,
+      54,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlowest-opacity-008: rgba(
+      20,
+      12,
+      12,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlowest-opacity-012: rgba(
+      20,
+      12,
+      12,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlowest-opacity-016: rgba(
+      20,
+      12,
+      12,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlow-opacity-008: rgba(
+      35,
+      25,
+      25,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlow-opacity-012: rgba(
+      35,
+      25,
+      25,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerlow-opacity-016: rgba(
+      35,
+      25,
+      25,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainer-opacity-008: rgba(
+      39,
+      29,
+      29,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainer-opacity-012: rgba(
+      39,
+      29,
+      29,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainer-opacity-016: rgba(
+      39,
+      29,
+      29,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhigh-opacity-008: rgba(
+      50,
+      40,
+      39,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhigh-opacity-012: rgba(
+      50,
+      40,
+      39,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhigh-opacity-016: rgba(
+      50,
+      40,
+      39,
+      0.16
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhighest-opacity-008: rgba(
+      61,
+      50,
+      49,
+      0.08
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhighest-opacity-012: rgba(
+      61,
+      50,
+      49,
+      0.12
+    );
+    --material-theme-state-layers-dark-medium-contrast-surfacecontainerhighest-opacity-016: rgba(
+      61,
+      50,
+      49,
+      0.16
+    );
+    --material-theme-ref-primary-primary100: #ffffff;
+    --material-theme-ref-primary-primary99: #fffbff;
+    --material-theme-ref-primary-primary98: #fff8f7;
+    --material-theme-ref-primary-primary95: #ffedeb;
+    --material-theme-ref-primary-primary90: #ffdad7;
+    --material-theme-ref-primary-primary80: #ffb3af;
+    --material-theme-ref-primary-primary70: #ff8984;
+    --material-theme-ref-primary-primary60: #de6f6b;
+    --material-theme-ref-primary-primary50: #be5754;
+    --material-theme-ref-primary-primary40: #9f3f3d;
+    --material-theme-ref-primary-primary35: #8f3332;
+    --material-theme-ref-primary-primary30: #802828;
+    --material-theme-ref-primary-primary25: #701c1e;
+    --material-theme-ref-primary-primary20: #611114;
+    --material-theme-ref-primary-primary15: #52040b;
+    --material-theme-ref-primary-primary10: #410005;
+    --material-theme-ref-primary-primary5: #2d0002;
+    --material-theme-ref-primary-primary0: #000000;
+    --material-theme-ref-secondary-secondary100: #ffffff;
+    --material-theme-ref-secondary-secondary99: #fffbff;
+    --material-theme-ref-secondary-secondary98: #fff8f7;
+    --material-theme-ref-secondary-secondary95: #ffedeb;
+    --material-theme-ref-secondary-secondary90: #ffdad7;
+    --material-theme-ref-secondary-secondary80: #e8bcb9;
+    --material-theme-ref-secondary-secondary70: #cba19e;
+    --material-theme-ref-secondary-secondary60: #af8784;
+    --material-theme-ref-secondary-secondary50: #936e6c;
+    --material-theme-ref-secondary-secondary40: #785654;
+    --material-theme-ref-secondary-secondary35: #6b4a48;
+    --material-theme-ref-secondary-secondary30: #5e3f3d;
+    --material-theme-ref-secondary-secondary25: #513432;
+    --material-theme-ref-secondary-secondary20: #452927;
+    --material-theme-ref-secondary-secondary15: #391e1d;
+    --material-theme-ref-secondary-secondary10: #2d1513;
+    --material-theme-ref-secondary-secondary5: #200a09;
+    --material-theme-ref-secondary-secondary0: #000000;
+    --material-theme-ref-tertiary-tertiary100: #ffffff;
+    --material-theme-ref-tertiary-tertiary99: #fffbff;
+    --material-theme-ref-tertiary-tertiary98: #fff8f3;
+    --material-theme-ref-tertiary-tertiary95: #ffeed8;
+    --material-theme-ref-tertiary-tertiary90: #ffdea8;
+    --material-theme-ref-tertiary-tertiary80: #e4c289;
+    --material-theme-ref-tertiary-tertiary70: #c7a770;
+    --material-theme-ref-tertiary-tertiary60: #aa8c58;
+    --material-theme-ref-tertiary-tertiary50: #8f7341;
+    --material-theme-ref-tertiary-tertiary40: #745a2b;
+    --material-theme-ref-tertiary-tertiary35: #674f21;
+    --material-theme-ref-tertiary-tertiary30: #5a4316;
+    --material-theme-ref-tertiary-tertiary25: #4d380b;
+    --material-theme-ref-tertiary-tertiary20: #412d02;
+    --material-theme-ref-tertiary-tertiary15: #342300;
+    --material-theme-ref-tertiary-tertiary10: #271900;
+    --material-theme-ref-tertiary-tertiary5: #190f00;
+    --material-theme-ref-tertiary-tertiary0: #000000;
+    --material-theme-ref-error-error100: #ffffff;
+    --material-theme-ref-error-error99: #fffbff;
+    --material-theme-ref-error-error98: #fff8f7;
+    --material-theme-ref-error-error95: #ffedea;
+    --material-theme-ref-error-error90: #ffdad6;
+    --material-theme-ref-error-error80: #ffb4ab;
+    --material-theme-ref-error-error70: #ff897d;
+    --material-theme-ref-error-error60: #ff5449;
+    --material-theme-ref-error-error50: #de3730;
+    --material-theme-ref-error-error40: #ba1a1a;
+    --material-theme-ref-error-error35: #a80710;
+    --material-theme-ref-error-error30: #93000a;
+    --material-theme-ref-error-error25: #7e0007;
+    --material-theme-ref-error-error20: #690005;
+    --material-theme-ref-error-error15: #540003;
+    --material-theme-ref-error-error10: #410002;
+    --material-theme-ref-error-error5: #2d0001;
+    --material-theme-ref-error-error0: #000000;
+    --material-theme-ref-neutral-neutral100: #ffffff;
+    --material-theme-ref-neutral-neutral99: #fffbff;
+    --material-theme-ref-neutral-neutral98: #fff8f7;
+    --material-theme-ref-neutral-neutral95: #fbeeec;
+    --material-theme-ref-neutral-neutral90: #ede0de;
+    --material-theme-ref-neutral-neutral80: #d0c4c3;
+    --material-theme-ref-neutral-neutral70: #b4a9a8;
+    --material-theme-ref-neutral-neutral60: #998e8d;
+    --material-theme-ref-neutral-neutral50: #7f7574;
+    --material-theme-ref-neutral-neutral40: #655c5c;
+    --material-theme-ref-neutral-neutral35: #595050;
+    --material-theme-ref-neutral-neutral30: #4d4544;
+    --material-theme-ref-neutral-neutral25: #413a39;
+    --material-theme-ref-neutral-neutral20: #362f2e;
+    --material-theme-ref-neutral-neutral15: #2b2424;
+    --material-theme-ref-neutral-neutral10: #201a1a;
+    --material-theme-ref-neutral-neutral5: #15100f;
+    --material-theme-ref-neutral-neutral0: #000000;
+    --material-theme-ref-neutral-variant-neutral-variant100: #ffffff;
+    --material-theme-ref-neutral-variant-neutral-variant99: #fffbff;
+    --material-theme-ref-neutral-variant-neutral-variant98: #fff8f7;
+    --material-theme-ref-neutral-variant-neutral-variant95: #ffedeb;
+    --material-theme-ref-neutral-variant-neutral-variant90: #f4dddb;
+    --material-theme-ref-neutral-variant-neutral-variant80: #d8c2c0;
+    --material-theme-ref-neutral-variant-neutral-variant70: #bba6a5;
+    --material-theme-ref-neutral-variant-neutral-variant60: #a08c8b;
+    --material-theme-ref-neutral-variant-neutral-variant50: #857371;
+    --material-theme-ref-neutral-variant-neutral-variant40: #6b5a59;
+    --material-theme-ref-neutral-variant-neutral-variant35: #5f4f4d;
+    --material-theme-ref-neutral-variant-neutral-variant30: #534342;
+    --material-theme-ref-neutral-variant-neutral-variant25: #473837;
+    --material-theme-ref-neutral-variant-neutral-variant20: #3b2d2c;
+    --material-theme-ref-neutral-variant-neutral-variant15: #302322;
+    --material-theme-ref-neutral-variant-neutral-variant10: #251918;
+    --material-theme-ref-neutral-variant-neutral-variant5: #190e0d;
+    --material-theme-ref-neutral-variant-neutral-variant0: #000000;
+    --material-theme-key-colors-primary: #802828;
+    --material-theme-source-seed: #802828;
+  
+    /* Fonts */
+    --material-theme-display-large-font-family: Oswald-Regular, sans-serif;
+    --material-theme-display-large-font-size: 57px;
+    --material-theme-display-large-line-height: 64px;
+    --material-theme-display-large-font-weight: 400;
+    --material-theme-display-large-font-style: normal;
+    --material-theme-display-medium-font-family: Oswald-Regular, sans-serif;
+    --material-theme-display-medium-font-size: 45px;
+    --material-theme-display-medium-line-height: 52px;
+    --material-theme-display-medium-font-weight: 400;
+    --material-theme-display-medium-font-style: normal;
+    --material-theme-display-small-font-family: Oswald-Regular, sans-serif;
+    --material-theme-display-small-font-size: 36px;
+    --material-theme-display-small-line-height: 44px;
+    --material-theme-display-small-font-weight: 400;
+    --material-theme-display-small-font-style: normal;
+    --material-theme-headline-large-font-family: Oswald-Regular, sans-serif;
+    --material-theme-headline-large-font-size: 32px;
+    --material-theme-headline-large-line-height: 40px;
+    --material-theme-headline-large-font-weight: 400;
+    --material-theme-headline-large-font-style: normal;
+    --material-theme-headline-medium-font-family: Oswald-Regular, sans-serif;
+    --material-theme-headline-medium-font-size: 28px;
+    --material-theme-headline-medium-line-height: 36px;
+    --material-theme-headline-medium-font-weight: 400;
+    --material-theme-headline-medium-font-style: normal;
+    --material-theme-headline-small-font-family: Oswald-Regular, sans-serif;
+    --material-theme-headline-small-font-size: 24px;
+    --material-theme-headline-small-line-height: 32px;
+    --material-theme-headline-small-font-weight: 400;
+    --material-theme-headline-small-font-style: normal;
+    --material-theme-body-large-font-family: Inter-Regular, sans-serif;
+    --material-theme-body-large-font-size: 16px;
+    --material-theme-body-large-line-height: 24px;
+    --material-theme-body-large-font-weight: 400;
+    --material-theme-body-large-font-style: normal;
+    --material-theme-body-medium-font-family: Inter-Regular, sans-serif;
+    --material-theme-body-medium-font-size: 14px;
+    --material-theme-body-medium-line-height: 20px;
+    --material-theme-body-medium-font-weight: 400;
+    --material-theme-body-medium-font-style: normal;
+    --material-theme-body-small-font-family: Inter-Regular, sans-serif;
+    --material-theme-body-small-font-size: 12px;
+    --material-theme-body-small-line-height: 16px;
+    --material-theme-body-small-font-weight: 400;
+    --material-theme-body-small-font-style: normal;
+    --material-theme-label-large-font-family: Inter-Medium, sans-serif;
+    --material-theme-label-large-font-size: 14px;
+    --material-theme-label-large-line-height: 20px;
+    --material-theme-label-large-font-weight: 500;
+    --material-theme-label-large-font-style: normal;
+    --material-theme-label-medium-font-family: Inter-Medium, sans-serif;
+    --material-theme-label-medium-font-size: 12px;
+    --material-theme-label-medium-line-height: 16px;
+    --material-theme-label-medium-font-weight: 500;
+    --material-theme-label-medium-font-style: normal;
+    --material-theme-label-small-font-family: Inter-Medium, sans-serif;
+    --material-theme-label-small-font-size: 11px;
+    --material-theme-label-small-line-height: 16px;
+    --material-theme-label-small-font-weight: 500;
+    --material-theme-label-small-font-style: normal;
+    --material-theme-title-large-font-family: Inter-Regular, sans-serif;
+    --material-theme-title-large-font-size: 22px;
+    --material-theme-title-large-line-height: 28px;
+    --material-theme-title-large-font-weight: 400;
+    --material-theme-title-large-font-style: normal;
+    --material-theme-title-medium-font-family: Inter-Medium, sans-serif;
+    --material-theme-title-medium-font-size: 16px;
+    --material-theme-title-medium-line-height: 24px;
+    --material-theme-title-medium-font-weight: 500;
+    --material-theme-title-medium-font-style: normal;
+    --material-theme-title-small-font-family: Inter-Medium, sans-serif;
+    --material-theme-title-small-font-size: 14px;
+    --material-theme-title-small-line-height: 20px;
+    --material-theme-title-small-font-weight: 500;
+    --material-theme-title-small-font-style: normal;
+  
+    /* Effects */
+  }
+  
