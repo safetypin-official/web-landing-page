@@ -1,0 +1,1 @@
+web: gunicorn safetypin_web.wsgi --log-file -
