@@ -34,3 +34,8 @@ def subscribe(request):
         return JsonResponse({"success": "Subscription successful"}, status=200)
 
     return JsonResponse({"error": "Invalid request"}, status=400)
+
+def open_post(request):
+    # receive param "post_id" from request and pass the value to html with context 
+    post_id = request.GET.get("post_id")
+    return render(request, "OpenPost.html", {"post_id": post_id})

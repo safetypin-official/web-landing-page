@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body onload="openApp()">
+    <h2>Redirecting to SafetyPin...</h2>
+    <p>If nothing happens, <a href="safetypin://post/{{ post.id }}">Open in App</a>click here</a> to open the app.</p>
+    <p>Or download it from the <a href="https://safetypin.up.railway.app/">App Store/Google Play</a>.</p>
+</body>
+<script>
+    function openApp() {
+        // Try opening the app
+        window.location.href = "safetypin://open";
+
+        // If not installed, redirect after 2 seconds
+        setTimeout(() => {
+            window.location.href = "https://safetypin.up.railway.app/"; // Replace with your website
+        }, 2000);
+    }
+</script>
+</html>
