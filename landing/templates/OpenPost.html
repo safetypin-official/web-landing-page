@@ -16,19 +16,19 @@
     </style>
 </head>
 <body onload="openApp()">
-    <h2>Redirecting to SafetyPin...</h2>
-    <p>If nothing happens, <a href="safetypin://post/{{ post.id }}">Open in App</a>click here</a> to open the app.</p>
-    <p>Or download it from the <a href="https://safetypin.up.railway.app/">App Store/Google Play</a>.</p>
+    <h2>Redirecting to SafetyPin...safetypin://post/{{ post_id }}</h2>
+    <p>If nothing happens, click <a href="safetypin://post/{{ post_id }}">here</a> to open the app.</p>
+    <p>Or download it from the <a href="/">our website</a>.</p>
 </body>
 <script>
     function openApp() {
         // Try opening the app
-        window.location.href = "safetypin://open";
+        window.location.href = "safetypin://post/{{ post_id }}";
 
         // If not installed, redirect after 2 seconds
-        setTimeout(() => {
-            window.location.href = "https://safetypin.up.railway.app/"; // Replace with your website
-        }, 2000);
+        // setTimeout(() => {
+        //     window.location.href = "https://safetypin.up.railway.app/"; // Replace with your website
+        // }, 2000);
     }
 </script>
 </html>
