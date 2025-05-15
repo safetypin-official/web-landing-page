@@ -21,22 +21,21 @@ def home(request):
 
 def subscribe(request):
     if request.method == "POST":
-        email = request.POST.get("email") 
-        print("yikes")
+        email = request.POST.get("email")
         if not email:
-            return JsonResponse({"error": "Email is required"}, status=400)
+            return JsonResponse({"isSuccess" : False, "message": "Email is required"}, status=400)
 
         # Check if email already exists
         if Subscriber.objects.filter(email=email).exists():
-            return JsonResponse({"error": "Email is already subscribed"}, status=400)
+            return JsonResponse({"isSuccess" : False, "message": "Email is already subscribed"}, status=200)
 
         # Save email to database
         subscriber = Subscriber(email=email)
         subscriber.save()
 
-        return JsonResponse({"success": "Subscription successful"}, status=200)
+        return JsonResponse({"isSuccess" : True, "message": "Subscription successful"}, status=200)
 
-    return JsonResponse({"error": "Invalid request"}, status=400)
+    return JsonResponse({"isSuccess" : False, "message": "Invalid request"}, status=400)
 
 def open_post(request, post_id):
     try:

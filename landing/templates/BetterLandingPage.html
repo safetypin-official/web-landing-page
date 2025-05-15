@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/fromScratch/vars.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,15 +17,15 @@
 
     <div class="navbar" id="navbar">
         
-        <div class="group-1 navbar-button" onclick="openTabAndScroll('page-home', 'navbar')">
+        <div class="group-1 satisfying-button" onclick="openTabAndScroll('page-home', 'navbar')">
             <img class="logo5" src="{% static 'images/logo4.svg' %}" />
             SafetyPin
         </div>
         
         <div class="group-2">
-            <div class="navbar-button" onclick="openTabAndScroll('page-pricing', 'navbar')">Pricing</div>
-            <div class="navbar-button" onclick="openTabAndScroll('page-home', 'demo')">Demo</div>
-            <div class="navbar-button" onclick="openTabAndScroll('page-home', 'contact')">Contact</div>
+            <div class="satisfying-button" onclick="openTabAndScroll('page-pricing', 'navbar')">Pricing</div>
+            <div class="satisfying-button" onclick="openTabAndScroll('page-home', 'demo')">Demo</div>
+            <div class="satisfying-button" onclick="openTabAndScroll('page-home', 'contact')">Contact</div>
         </div>
 
     </div>
@@ -38,14 +39,13 @@
 
 
             <div class="group-3">Navigate Safely, Stay Informed—Wherever You Are.</div>
-            <div class="group-4">Real-time safety alerts and community-driven reports, so you can travel smarter and stay protected—whether you're home or away.</div>
-            <div class="group-5">Learn More</div>
+            <div class="group-4"><i>Real-time safety alerts and community-driven reports, so you can travel smarter and stay protected—whether you're home or away.</i></div>
+            <div class="group-5 satisfying-button" onclick="openTabAndScroll('page-home', 'learn-more')">Learn More</div>
         
         </div>
 
 
-        <div class="part-2">
-            <div class="group-12"></div>
+        <div class="part-2" id="learn-more">
 
             <div class="group-6">
                     <img class="img-2" src="{% static 'images/group-90.svg' %}" />
@@ -63,7 +63,6 @@
                 </div>
             </div>
 
-            <div class="group-12"> </div>
             
         </div>
 
@@ -194,7 +193,7 @@
         <div class="tac">
             <!-- Terms & conditions -->
             <div class="tac-title">
-                Terms and Condition
+                Terms and Conditions
             </div>
             <ol class="tac-desc">
                 <li><strong>Conditions of Use</strong>
@@ -325,10 +324,8 @@
         function openTab(tabClassName) {
             document.querySelectorAll('.page').forEach(tab => {
                 if (tab.classList.contains(tabClassName)){
-                    console.log(tab.className + ": show");
                     tab.style.display = 'block';
                 } else {
-                    console.log(tab.className + ": hide");
                     tab.style.display = 'none';
                 }
                 window.scrollTo({
@@ -368,29 +365,30 @@
             const errorIcon = document.getElementById("errorIcon");
             const existsIcon = document.getElementById("existsIcon");
 
-            function showModal(status) {
+            function showModal(result) {
                 // Hide all icons first
                 [successIcon, errorIcon, existsIcon].forEach(icon => icon.style.display = 'none');
                 
                 // Configure modal based on status
-                switch(status) {
-                    case 'success':
+                switch(result.isSuccess) {
+                    case true:
                         modalTitle.textContent = "Thank You!";
                         modalMessage.textContent = "You have successfully subscribed to our newsletter.";
                         successIcon.style.display = 'block';
                         modalButton.className = 'modal-button';
                         break;
-                    case 'error':
-                        modalTitle.textContent = "Oops!";
-                        modalMessage.textContent = "Something went wrong. Please try again later.";
-                        errorIcon.style.display = 'block';
-                        modalButton.className = 'modal-button error';
-                        break;
-                    case 'exists':
-                        modalTitle.textContent = "Already Subscribed";
-                        modalMessage.textContent = "This email is already subscribed to our newsletter.";
-                        existsIcon.style.display = 'block';
-                        modalButton.className = 'modal-button exists';
+                    case false:
+                        if (result.message == 'Email is already subscribed') {
+                            modalTitle.textContent = "Already Subscribed";
+                            modalMessage.textContent = "This email is already subscribed to our newsletter.";
+                            existsIcon.style.display = 'block';
+                            modalButton.className = 'modal-button exists';
+                        } else {
+                            modalTitle.textContent = "Oops!";
+                            modalMessage.textContent = "Something went wrong. Please try again later.";
+                            errorIcon.style.display = 'block';
+                            modalButton.className = 'modal-button error';
+                        }
                         break;
                 }
         
@@ -435,12 +433,7 @@
                         let result = await response.json();
                         
                         // Show appropriate modal based on response
-                        const status = result.success ? 'success' : 
-                                    result.exists ? 'exists' : 'error';
-                        
-                        showModal(status);
-    
-                        console.log(status);
+                        showModal(result);
                         
                         // Clear form if successful
                         if (result.success) {
@@ -448,7 +441,7 @@
                         }
                     } catch (error) {
                         console.error("Error:", error);
-                        showModal('error');
+                        showModal({'isSuccess' : False, 'message' : 'JSON parsing Error'});
                     }
                 };
             }
