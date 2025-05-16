@@ -8,33 +8,34 @@ from django_user_agents.utils import get_user_agent
 def home(request):
     user_agent = get_user_agent(request)
     
-    if user_agent.is_mobile:
-        template = "mobile/index.html"
-    elif user_agent.is_tablet:
-        template = "desktop/index.html"
-    else:
-        template = "desktop/index.html"
+    # if user_agent.is_mobile:
+    #     template = "mobile/index.html"
+    # elif user_agent.is_tablet:
+    #     template = "desktop/index.html"
+    # else:
+    #     template = "desktop/index.html"
+
+    template = "BetterLandingPage.html"
 
     return render(request, template)
 
 def subscribe(request):
     if request.method == "POST":
-        email = request.POST.get("email") 
-        print("yikes")
+        email = request.POST.get("email")
         if not email:
-            return JsonResponse({"error": "Email is required"}, status=400)
+            return JsonResponse({"isSuccess" : False, "message": "Email is required"}, status=400)
 
         # Check if email already exists
         if Subscriber.objects.filter(email=email).exists():
-            return JsonResponse({"error": "Email is already subscribed"}, status=400)
+            return JsonResponse({"isSuccess" : False, "message": "Email is already subscribed"}, status=200)
 
         # Save email to database
         subscriber = Subscriber(email=email)
         subscriber.save()
 
-        return JsonResponse({"success": "Subscription successful"}, status=200)
+        return JsonResponse({"isSuccess" : True, "message": "Subscription successful"}, status=200)
 
-    return JsonResponse({"error": "Invalid request"}, status=400)
+    return JsonResponse({"isSuccess" : False, "message": "Invalid request"}, status=400)
 
 def open_post(request, post_id):
     try:

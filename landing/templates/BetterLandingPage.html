@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyPin - Navigate Safely</title>
+    <link rel="stylesheet" href="{% static 'css/fromScratch/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fromScratch/vars.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="navbar" id="navbar">
+        
+        <div class="group-1 satisfying-button" onclick="openTabAndScroll('page-home', 'navbar')">
+            <img class="logo5" src="{% static 'images/logo4.svg' %}" alt="Logo SafetyPin" />
+            SafetyPin
+        </div>
+        
+        <div class="group-2">
+            <div class="satisfying-button" onclick="openTabAndScroll('page-pricing', 'navbar')">Pricing</div>
+            <div class="satisfying-button" onclick="openTabAndScroll('page-home', 'demo')">Demo</div>
+            <div class="satisfying-button" onclick="openTabAndScroll('page-home', 'contact')">Contact</div>
+        </div>
+
+    </div>
+
+    <div class="page page-home">
+        <div class="part-1">
+            <img class="img-1" src="{% static 'images/new-thing-10.png' %}" alt="City"/> 
+            <img class="img-1-pin-1" src="{% static 'images/logo0.svg' %}" alt="Pin" /> 
+            <img class="img-1-pin-2" src="{% static 'images/logo1.svg' %}" alt="Pin"  /> 
+            <img class="img-1-pin-3" src="{% static 'images/logo2.svg' %}" alt="Pin" /> 
+
+
+            <div class="group-3">Navigate Safely, Stay Informed—Wherever You Are.</div>
+            <div class="group-4"><i>Real-time safety alerts and community-driven reports, so you can travel smarter and stay protected—whether you're home or away.</i></div>
+            <div class="group-5 satisfying-button" onclick="openTabAndScroll('page-home', 'learn-more')">Learn More</div>
+        
+        </div>
+
+
+        <div class="part-2" id="learn-more">
+
+            <div class="group-6">
+                    <img class="img-2" src="{% static 'images/group-90.svg' %}"  alt="Person"/>
+                    <img class="img-3" src="{% static 'images/envato-labs-image-edit-2-10.png' %}" alt="Person"  />
+                    <img class="img-4" src="{% static 'images/logo3.svg' %}" alt="Pin"/>
+            </div>
+
+            <div class="group-9"> 
+                <div class="group-10">Meet SafetyPin... <br> your personal Safety Companion.</div>
+                <div class="group-11">SafetyPin is a real-time mapping app designed to keep you informed and protected.
+                    Whether it’s reporting crimes, tracking lost items, or checking the safety of specific areas,
+                    SafetyPin provides centralized, community-driven updates to help you avoid high-risk zones.
+                    Say goodbye to scattered social media posts and unreliable broadcasts— 
+                    <strong>SafetyPin makes traveling safe simple, intuitive, and reliable.</strong>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="part-3">
+            <div class="group-13"> We’re here to help you.</div>
+
+            <div class="group-14">
+                <div class="group-15">
+                    <img class="img-5" src="{% static 'images/group0.svg' %}" alt="Alert" />
+                    <div class="group-16">Stay Alert.</div>
+                    <div class="group-17">Get real-time updates on nearby incidents so you can make informed decisions, whether you're commuting, traveling, or out alone.</div>
+                </div>
+                <div class="group-15">
+                    <img class="img-5" src="{% static 'images/fluent-people-community-32-regular0.svg' %}" alt="Community"/>
+                    <div class="group-16">Stay Connected.</div>
+                    <div class="group-17">Join a community that looks out for each other by sharing reports and updates that help everyone stay safe.</div>
+                </div>
+                <div class="group-15">
+                    <img class="img-5" src="{% static 'images/mdi-head-alert-outline0.svg' %}" alt="Head"/>
+                    <div class="group-16">Stay Aware.</div>
+                    <div class="group-17">View risk levels in different areas at a glance, helping you navigate safely—whether at home or in a city you've never been to before.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="part-4">
+            <div class="group-24">
+                <div class="group-18">Our Features</div>
+                <div class="group-19">
+                    <div class="group-20">
+                        <div class="group-23">1</div>
+                        <div class="group-25">
+                            <div class="group-21">Interactive Safety Map</div>
+                            <div class="group-22">View real-time incident reports pinned on a shared map, seamlessly integrated with Google Maps for easy navigation and awareness.</div>
+                    
+                        </div>
+                    </div>
+                    <div class="group-20">
+                        <div class="group-23">2</div>
+                        <div class="group-25">
+                            <div class="group-21">Live Alerts & Notifications</div>
+                            <div class="group-22">Receive instant updates on crimes, accidents, lost items, and other incidents happening near you, so you can stay informed and make safer choices.</div>
+                        </div>
+                    </div>
+                    <div class="group-20">
+                        <div class="group-23">3</div>
+                        <div class="group-25">
+                            <div class="group-21">User-Generated Reports</div>
+                            <div class="group-22">Contribute to community safety by reporting incidents quickly and easily. Your report helps others stay aware and take precautions.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <img class="img-6" src="{% static 'images/i-phone-160.png' %}" alt="Phones" />
+        </div>
+
+        <div class="part-5">
+            <img class="img-7" src="{% static 'images/concept-of-travel-and-adventure-traveller-lifesty-2023-11-27-05-26-17-utc-10.png' %}" alt="Map"/>
+            <div class="group-27"></div>  <!-- gradient effect -->
+            <div class="group-26" id="demo">Try Our Demo Now!</div>
+        </div>
+    </div>
+
+    <div class="page page-pricing">
+        
+        <div class="pricing">
+            <!-- pricing -->
+            <div class="pricing-title">
+                Pricing
+            </div>
+            <div class="pricing-desc">
+                SafetyPin is a location-based social media
+                platform that connects people based on shared safety
+                concerns, interests, and local experiences.
+                We offer two account types to support your journey:
+                Free and Premium.
+            </div>
+        </div>
+
+        <div class="plans">
+            <!-- plan  -->
+             
+            <div class="plan-parent">
+                <div class="plan free-plan">
+
+                    <div class="plan-title">
+                        Free Plan
+                    </div>
+                    
+                    <div class="plan-price">Rp0/month</div>
+                    <div class="plan-desc">
+                        Perfect for everyday users who want to stay updated and connected. <br>
+                    
+                        <ul>
+                            <li><strong>Browse</strong> public posts</li>
+                            <li>Upload <strong>up to 3 posts</strong> per day</li>
+                            <li>Upload posts with <strong>title</strong> at maximum <strong>70 characters</strong></li>
+                            <li>Upload posts with <strong>description</strong> at maximum <strong>200 characters</strong></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="plan-parent">
+                <div class="plan premium-plan">
+                <div class="plan-title">
+                    Premium Plan
+                </div>
+                
+                <div class="plan-price">Rp20k/month</div>
+                <div class="plan-desc">
+
+                    <ul>
+                        <li>Post <strong>up to 10</strong> per day</li>
+                        <li>Upload posts with <strong>title</strong> at maximum <strong>140 characters</strong></li>
+                        <li>Upload posts with <strong>description</strong> at maximum <strong>800 characters</strong></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="tac">
+            <!-- Terms & conditions -->
+            <div class="tac-title">
+                Terms and Conditions
+            </div>
+            <ol class="tac-desc">
+                <li><strong>Conditions of Use</strong><br>
+                    SafetyPin is provided to you, the user, subject to your acceptance of all terms, conditions, and notices outlined below. Continued use of this app implies agreement.
+                </li>
+                
+                <li><strong>Overview</strong><br>
+                    By using the SafetyPin app or website, you agree to all applicable rules and guidelines. If you do not agree to these Terms & Conditions, you must immediately stop using the platform.
+                </li>
+                
+                <li><strong>Modification of Terms & Pricing</strong><br>
+                SafetyPin reserves the right to change, update, or modify any content, prices, or service features at any time without prior notice. Premium pricing may be adjusted periodically.
+                </li>
+                
+                
+                <li><strong>Copyright & Ownership</strong><br>
+                All content, branding, and technology used in SafetyPin are the property of SafetyPin Team and protected by applicable copyright and trademark laws.
+                </li>
+                
+                <li><strong>Account Signup</strong><br>
+                    To post or interact, you must sign up with accurate and current information. You are responsible for maintaining the confidentiality of your account credentials.
+                </li>
+                
+                <li><strong>Electronic Communication</strong><br>
+                    By signing up, you consent to receive emails and notifications regarding updates, promotions, or security messages from SafetyPin. You may opt out at any time.
+                </li>
+                
+                <li><strong>Service Description</strong><br>
+                    While we do our best to present accurate features and availability of both Free and Premium plans, actual experiences may vary depending on your location, device, or network access.
+                </li>
+                
+                
+                <li><strong>Risk and Responsibility</strong><br>
+                    You are solely responsible for the content you post and the interactions you make. SafetyPin is not liable for any damages, loss, or disputes resulting from user-generated content.
+                </li>
+                
+                
+                <li><strong>Privacy Policy</strong><br>
+                    We take your data seriously. SafetyPin understands that privacy concerns are extremely important to our customers. You can rest assured that any information you submit to us will not be misused, abused, or sold to any other parties. We only use your personal information to complete your order.
+                </li>
+                
+                
+                <li><strong>Indemnity</strong><br>
+                    You agree to defend and hold harmless SafetyPin from any third-party claims resulting from your actions or misuse of the platform.
+                </li>
+                
+                <li><strong>Disclaimer</strong><br>
+                    SafetyPin makes no guarantees regarding the continuity, accuracy, or safety of the service. Some features may be discontinued or changed without notice.
+                </li>
+                
+                <li><strong>Governing Law</strong><br>
+                These Terms are governed by the laws of the Republic of Indonesia. Any disputes shall be handled according to applicable national legal processes.
+                </li>
+                
+                <li><strong>Feedback & Support</strong><br>
+                    We welcome feedback! Contact us anytime at safetypin.ppl@gmail.com
+                </li>
+                
+            </ol>
+            
+        </div>
+
+
+    </div>
+
+    
+
+    <div class="footer">
+
+        <div class="news">
+            <div class="news-1">Want the latest updates?</div>
+            <div class="news-2">Sign up for our newsletter now!</div>
+            <form method="POST" class="news-3">
+                {% csrf_token %}
+                <input type="email" name="email" class="news-4" placeholder="Email address" required>
+                <button type="submit" class="news-5">
+                    <div>
+                        <div>Sign Up</div>
+                    </div>
+                </button>
+            </form>
+        </div>
+
+
+        <div class="contact" id="contact">
+            <div class="contact-3">Contact Us</div>
+            <div class="contact-1">
+                <img class="img-8" src="{% static 'images/contact-email.png' %}" alt="Email"/>
+                <a class="contact-2" href= "mailto:safetypin.ppl@gmail.com">safetypin.ppl@gmail.com</a>
+            </div>
+            <div class="contact-1">
+                <img class="img-8" src="{% static 'images/contact-IG.png' %}" alt="Instagram" />
+                <a class="contact-2" href="https://x.com/SafetyPinPPL">@safetypinppl</a>
+            </div>
+            <div class="contact-1">
+                <img class="img-8" src="{% static 'images/contact-X.png' %}" alt="X" />
+                <a class="contact-2" href="https://www.instagram.com/safetypinppl/">@SafetyPinPPL</a>
+            </div>
+        </div>
+
+        
+        
+        <div class="footer-end">
+            <hr style="border: none; height: 2px; background-color: white;">
+            © 2025 SafetyPin. All rights reserved.
+        </div>
+    </div>
+
+
+
+    <div id="subscriptionModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-icon">
+        <svg id="successIcon" class="icon success-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <svg id="errorIcon" class="icon error-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="15" y1="9" x2="9" y2="15"></line>
+          <line x1="9" y1="9" x2="15" y2="15"></line>
+        </svg>
+        <svg id="existsIcon" class="icon exists-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </div>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <p id="modalMessage" class="modal-message"></p>
+      <button id="modalClose" class="modal-button">Close</button>
+    </div>
+  </div>
+
+
+    <script>
+        openTab("page-home")
+
+        function openTab(tabClassName) {
+            document.querySelectorAll('.page').forEach(tab => {
+                if (tab.classList.contains(tabClassName)){
+                    tab.style.display = 'block';
+                } else {
+                    tab.style.display = 'none';
+                }
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                
+            });
+        }
+
+        function openTabAndScroll(tabClassName, sectionId){
+            openTab(tabClassName);
+            scrollToSection(sectionId);
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("subscriptionModal");
+            const form = document.querySelector(".news-3");
+            const modalTitle = document.getElementById("modalTitle");
+            const modalMessage = document.getElementById("modalMessage");
+            const modalButton = document.getElementById("modalClose");
+            const successIcon = document.getElementById("successIcon");
+            const errorIcon = document.getElementById("errorIcon");
+            const existsIcon = document.getElementById("existsIcon");
+
+            function showModal(result) {
+                // Hide all icons first
+                [successIcon, errorIcon, existsIcon].forEach(icon => icon.style.display = 'none');
+                
+                // Configure modal based on status
+                switch(result.isSuccess) {
+                    case true:
+                        modalTitle.textContent = "Thank You!";
+                        modalMessage.textContent = "You have successfully subscribed to our newsletter.";
+                        successIcon.style.display = 'block';
+                        modalButton.className = 'modal-button';
+                        break;
+                    case false:
+                        if (result.message == 'Email is already subscribed') {
+                            modalTitle.textContent = "Already Subscribed";
+                            modalMessage.textContent = "This email is already subscribed to our newsletter.";
+                            existsIcon.style.display = 'block';
+                            modalButton.className = 'modal-button exists';
+                        } else {
+                            modalTitle.textContent = "Oops!";
+                            modalMessage.textContent = "Something went wrong. Please try again later.";
+                            errorIcon.style.display = 'block';
+                            modalButton.className = 'modal-button error';
+                        }
+                        break;
+                }
+        
+                // Show modal
+                modal.style.display = 'flex';
+                setTimeout(() => modal.classList.add('show'), 10);
+        
+                // Auto-close after 3 seconds
+                setTimeout(() => closeModal(), 3000);
+            }
+        
+            function closeModal() {
+                modal.classList.remove('show');
+                setTimeout(() => modal.style.display = 'none', 300);
+            }
+        
+            // Close modal when clicking the close button
+            modalButton.addEventListener('click', closeModal);
+        
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        
+            if (form) {
+                form.onsubmit = async function(e) {
+                    e.preventDefault();
+        
+                    try {
+                        let formData = new FormData(this);
+                        let response = await fetch("{% url 'subscribe' %}", {
+                            method: "POST",
+                            body: formData,
+                            headers: {
+                                "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value
+                            }
+                        });
+                        
+    
+                        let result = await response.json();
+                        
+                        // Show appropriate modal based on response
+                        showModal(result);
+                        
+                        // Clear form if successful
+                        if (result.isSuccess) {
+                            form.reset();
+                        }
+                    } catch (error) {
+                        console.error("Error:", error);
+                        showModal({'isSuccess' : false, 'message' : 'JSON parsing Error'});
+                    }
+                };
+            }
+        });
+    </script>
+
+</body>
+</html>
