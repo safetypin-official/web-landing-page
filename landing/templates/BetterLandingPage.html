@@ -4,7 +4,7 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SafetyPin - Navigate Safely</title>
     <link rel="stylesheet" href="{% static 'css/fromScratch/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/fromScratch/vars.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
     <div class="navbar" id="navbar">
         
         <div class="group-1 satisfying-button" onclick="openTabAndScroll('page-home', 'navbar')">
-            <img class="logo5" src="{% static 'images/logo4.svg' %}" />
+            <img class="logo5" src="{% static 'images/logo4.svg' %}" alt="Logo SafetyPin" />
             SafetyPin
         </div>
         
@@ -32,10 +32,10 @@
 
     <div class="page page-home">
         <div class="part-1">
-            <img class="img-1" src="{% static 'images/new-thing-10.png' %}" /> 
-            <img class="img-1-pin-1" src="{% static 'images/logo0.svg' %}" /> 
-            <img class="img-1-pin-2" src="{% static 'images/logo1.svg' %}" /> 
-            <img class="img-1-pin-3" src="{% static 'images/logo2.svg' %}" /> 
+            <img class="img-1" src="{% static 'images/new-thing-10.png' %}" alt="City"/> 
+            <img class="img-1-pin-1" src="{% static 'images/logo0.svg' %}" alt="Pin" /> 
+            <img class="img-1-pin-2" src="{% static 'images/logo1.svg' %}" alt="Pin"  /> 
+            <img class="img-1-pin-3" src="{% static 'images/logo2.svg' %}" alt="Pin" /> 
 
 
             <div class="group-3">Navigate Safely, Stay Informed—Wherever You Are.</div>
@@ -48,9 +48,9 @@
         <div class="part-2" id="learn-more">
 
             <div class="group-6">
-                    <img class="img-2" src="{% static 'images/group-90.svg' %}" />
-                    <img class="img-3" src="{% static 'images/envato-labs-image-edit-2-10.png' %}" />
-                    <img class="img-4" src="{% static 'images/logo3.svg' %}" />
+                    <img class="img-2" src="{% static 'images/group-90.svg' %}"  alt="Person"/>
+                    <img class="img-3" src="{% static 'images/envato-labs-image-edit-2-10.png' %}" alt="Person"  />
+                    <img class="img-4" src="{% static 'images/logo3.svg' %}" alt="Pin"/>
             </div>
 
             <div class="group-9"> 
@@ -71,17 +71,17 @@
 
             <div class="group-14">
                 <div class="group-15">
-                    <img class="img-5" src="{% static 'images/group0.svg' %}" />
+                    <img class="img-5" src="{% static 'images/group0.svg' %}" alt="Alert" />
                     <div class="group-16">Stay Alert.</div>
                     <div class="group-17">Get real-time updates on nearby incidents so you can make informed decisions, whether you're commuting, traveling, or out alone.</div>
                 </div>
                 <div class="group-15">
-                    <img class="img-5" src="{% static 'images/fluent-people-community-32-regular0.svg' %}" />
+                    <img class="img-5" src="{% static 'images/fluent-people-community-32-regular0.svg' %}" alt="Community"/>
                     <div class="group-16">Stay Connected.</div>
                     <div class="group-17">Join a community that looks out for each other by sharing reports and updates that help everyone stay safe.</div>
                 </div>
                 <div class="group-15">
-                    <img class="img-5" src="{% static 'images/mdi-head-alert-outline0.svg' %}" />
+                    <img class="img-5" src="{% static 'images/mdi-head-alert-outline0.svg' %}" alt="Head"/>
                     <div class="group-16">Stay Aware.</div>
                     <div class="group-17">View risk levels in different areas at a glance, helping you navigate safely—whether at home or in a city you've never been to before.</div>
                 </div>
@@ -117,11 +117,11 @@
                 </div>
             </div>
             
-            <img class="img-6" src="{% static 'images/i-phone-160.png' %}" />
+            <img class="img-6" src="{% static 'images/i-phone-160.png' %}" alt="Phones" />
         </div>
 
         <div class="part-5">
-            <img class="img-7" src="{% static 'images/concept-of-travel-and-adventure-traveller-lifesty-2023-11-27-05-26-17-utc-10.png' %}" />
+            <img class="img-7" src="{% static 'images/concept-of-travel-and-adventure-traveller-lifesty-2023-11-27-05-26-17-utc-10.png' %}" alt="Map"/>
             <div class="group-27"></div>  <!-- gradient effect -->
             <div class="group-26" id="demo">Try Our Demo Now!</div>
         </div>
@@ -196,51 +196,62 @@
                 Terms and Conditions
             </div>
             <ol class="tac-desc">
-                <li><strong>Conditions of Use</strong>
-                    
+                <li><strong>Conditions of Use</strong><br>
+                    SafetyPin is provided to you, the user, subject to your acceptance of all terms, conditions, and notices outlined below. Continued use of this app implies agreement.
                 </li>
-                SafetyPin is provided to you, the user, subject to your acceptance of all terms, conditions, and notices outlined below. Continued use of this app implies agreement.
-
-                <li><strong>Overview</strong></li>
-                By using the SafetyPin app or website, you agree to all applicable rules and guidelines. If you do not agree to these Terms & Conditions, you must immediately stop using the platform.
-
-                <li><strong>Modification of Terms & Pricing</strong></li>
+                
+                <li><strong>Overview</strong><br>
+                    By using the SafetyPin app or website, you agree to all applicable rules and guidelines. If you do not agree to these Terms & Conditions, you must immediately stop using the platform.
+                </li>
+                
+                <li><strong>Modification of Terms & Pricing</strong><br>
                 SafetyPin reserves the right to change, update, or modify any content, prices, or service features at any time without prior notice. Premium pricing may be adjusted periodically.
-
+                </li>
                 
-                <li><strong>Copyright & Ownership</strong></li>
+                
+                <li><strong>Copyright & Ownership</strong><br>
                 All content, branding, and technology used in SafetyPin are the property of SafetyPin Team and protected by applicable copyright and trademark laws.
-
-                <li><strong>Account Signup</strong></li>
-                To post or interact, you must sign up with accurate and current information. You are responsible for maintaining the confidentiality of your account credentials.
-
-                <li><strong>Electronic Communication</strong></li>
-                By signing up, you consent to receive emails and notifications regarding updates, promotions, or security messages from SafetyPin. You may opt out at any time.
+                </li>
                 
-                <li><strong>Service Description</strong></li>
-                While we do our best to present accurate features and availability of both Free and Premium plans, actual experiences may vary depending on your location, device, or network access.
-
+                <li><strong>Account Signup</strong><br>
+                    To post or interact, you must sign up with accurate and current information. You are responsible for maintaining the confidentiality of your account credentials.
+                </li>
                 
-                <li><strong>Risk and Responsibility</strong></li>
-                You are solely responsible for the content you post and the interactions you make. SafetyPin is not liable for any damages, loss, or disputes resulting from user-generated content.
-
+                <li><strong>Electronic Communication</strong><br>
+                    By signing up, you consent to receive emails and notifications regarding updates, promotions, or security messages from SafetyPin. You may opt out at any time.
+                </li>
                 
-                <li><strong>Privacy Policy</strong></li>
-                We take your data seriously. SafetyPin understands that privacy concerns are extremely important to our customers. You can rest assured that any information you submit to us will not be misused, abusedorsold to any other parties. We only use your personal information to complete your order.
-
+                <li><strong>Service Description</strong><br>
+                    While we do our best to present accurate features and availability of both Free and Premium plans, actual experiences may vary depending on your location, device, or network access.
+                </li>
                 
-                <li><strong>Indemnity</strong></li>
-                You agree to defend and hold harmless SafetyPin from any third-party claims resulting from your actions or misuse of the platform.
-
-                <li><strong>Disclaimer</strong></li>
-                SafetyPin makes no guarantees regarding the continuity, accuracy, or safety of the service. Some features may be discontinued or changed without notice.
-
-                <li><strong>Governing Law</strong></li>
+                
+                <li><strong>Risk and Responsibility</strong><br>
+                    You are solely responsible for the content you post and the interactions you make. SafetyPin is not liable for any damages, loss, or disputes resulting from user-generated content.
+                </li>
+                
+                
+                <li><strong>Privacy Policy</strong><br>
+                    We take your data seriously. SafetyPin understands that privacy concerns are extremely important to our customers. You can rest assured that any information you submit to us will not be misused, abused, or sold to any other parties. We only use your personal information to complete your order.
+                </li>
+                
+                
+                <li><strong>Indemnity</strong><br>
+                    You agree to defend and hold harmless SafetyPin from any third-party claims resulting from your actions or misuse of the platform.
+                </li>
+                
+                <li><strong>Disclaimer</strong><br>
+                    SafetyPin makes no guarantees regarding the continuity, accuracy, or safety of the service. Some features may be discontinued or changed without notice.
+                </li>
+                
+                <li><strong>Governing Law</strong><br>
                 These Terms are governed by the laws of the Republic of Indonesia. Any disputes shall be handled according to applicable national legal processes.
-
-                <li><strong>Feedback & Support</strong></li>
-                We welcome feedback! Contact us anytime at safetypin.ppl@gmail.com
-        
+                </li>
+                
+                <li><strong>Feedback & Support</strong><br>
+                    We welcome feedback! Contact us anytime at safetypin.ppl@gmail.com
+                </li>
+                
             </ol>
             
         </div>
@@ -270,15 +281,15 @@
         <div class="contact" id="contact">
             <div class="contact-3">Contact Us</div>
             <div class="contact-1">
-                <img class="img-8" src="{% static 'images/contact-email.png' %}" />
+                <img class="img-8" src="{% static 'images/contact-email.png' %}" alt="Email"/>
                 <a class="contact-2" href= "mailto:safetypin.ppl@gmail.com">safetypin.ppl@gmail.com</a>
             </div>
             <div class="contact-1">
-                <img class="img-8" src="{% static 'images/contact-IG.png' %}" />
+                <img class="img-8" src="{% static 'images/contact-IG.png' %}" alt="Instagram" />
                 <a class="contact-2" href="https://x.com/SafetyPinPPL">@safetypinppl</a>
             </div>
             <div class="contact-1">
-                <img class="img-8" src="{% static 'images/contact-X.png' %}" />
+                <img class="img-8" src="{% static 'images/contact-X.png' %}" alt="X" />
                 <a class="contact-2" href="https://www.instagram.com/safetypinppl/">@SafetyPinPPL</a>
             </div>
         </div>
@@ -436,12 +447,12 @@
                         showModal(result);
                         
                         // Clear form if successful
-                        if (result.success) {
+                        if (result.isSuccess) {
                             form.reset();
                         }
                     } catch (error) {
                         console.error("Error:", error);
-                        showModal({'isSuccess' : False, 'message' : 'JSON parsing Error'});
+                        showModal({'isSuccess' : false, 'message' : 'JSON parsing Error'});
                     }
                 };
             }

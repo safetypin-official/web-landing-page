@@ -284,7 +284,7 @@
 
 .img-6 {
     flex: 0 0 auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .group-24 {
@@ -442,7 +442,6 @@
 
 .news-4{
     /* search field */
-    all: unset;
     background-color: var(--material-theme-white);
     color: var(--material-theme-black);
     padding: 5px 10px 5px 20px;
