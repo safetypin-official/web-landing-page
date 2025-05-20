@@ -31,6 +31,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Add these settings
+CSRF_TRUSTED_ORIGINS = [
+    'https://safetypin.ppl.cs.ui.ac.id',
+]
+
 MIDDLEWARE = [
     'django_user_agents.middleware.UserAgentMiddleware',
 ]
