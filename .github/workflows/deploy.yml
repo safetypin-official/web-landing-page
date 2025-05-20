@@ -9,6 +9,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      ENVIRONMENT: PRODUCTION
+      # DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+      # DATABASE_USER: ${{ secrets.DATABASE_USER }}
+      # DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      # DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
+      # DATABASE_PORT: ${{ secrets.DATABASE_PORT }}
+    
     
     steps:
     - uses: actions/checkout@v3
